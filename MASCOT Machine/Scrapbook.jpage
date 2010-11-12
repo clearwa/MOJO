@@ -1,0 +1,24 @@
+tt cannot be resolved or is not a type
+Object tt = new Object();
+
+Object kk = tt.class.getMethod( "hashCode" );
+DevicePool.devicePoolFactory()
+EntityStore.estore();
+EsSubsystem global =
+	((GlobalSubsystemEntity) EntityStore.estore().subsystemDescriptors().get("global");
+global
+(new Hashtable()).keySet()
+private void checkImplementation(Hashtable classes, MascotEntities implementation) throws MascotMachineException {
+	//		EntityInstance ei = new EInstance(implementation.getClassName(), null);
+	EntityInstance ei = new EInstance(implementation);
+	if (!classes.containsKey(implementation)) {
+		try {
+			ei.setImpClass(implementation.getImplementationClass());
+		} catch (Exception e) {
+			//Make the entry but the Class is null
+			throw new MascotMachineException("Cannot load class " + implementation.getClassName());
+		} finally {
+			classes.put(MEInstanced.makeUniqueName(implementation), ei);
+		}
+	}
+	

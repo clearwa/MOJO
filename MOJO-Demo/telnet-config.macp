@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The template for a new acp SET file -->
+<SETS>
+	<SET name="Telnet Server">
+		<Subsystem name="telnet-server" type="subsystem">
+			<activity-ref name="IncarnateSessions"/>
+			<subsys-ref name="Host23" reference="CreateService">
+				<arguments>
+					<Integer index="device-port" value="23"/>
+				</arguments>
+			</subsys-ref>
+			<subsys-ref name="Host17001" reference="CreateService">
+				<arguments>
+					<Integer index="device-port" value="17001"/>
+				</arguments>
+			</subsys-ref>
+			<subsys-ref name="Host18001" reference="CreateService">
+				<arguments>
+					<Integer index="device-port" value="18001"/>
+				</arguments>
+			</subsys-ref>
+		</Subsystem>
+		<Subsystem name="global" type="global">
+			<subsys-ref reference="" name="telnet-server"/>
+		</Subsystem>
+	</SET>
+</SETS>

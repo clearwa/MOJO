@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" size="1092,499" id="callistoClearwaMASCOTExamples0" metadata="nsuml-1.4" initialized="true" showWireOptions="5">
+  <children xsi:type="editmodel:ClassEditModel" location="133,81" size="158,391" id="callistoClearwaMASCOTExamples1" runTimeClassModel="callistoClearwaMASCOTExamples11;callistoClearwaMASCOTExamples228;callistoClearwaMASCOTExamples4;callistoClearwaMASCOTExamples148;callistoClearwaMASCOTExamples267;callistoClearwaMASCOTExamples248;callistoClearwaMASCOTExamples250;callistoClearwaMASCOTExamples264;callistoClearwaMASCOTExamples237;callistoClearwaMASCOTExamples262;callistoClearwaMASCOTExamples161;callistoClearwaMASCOTExamples219;callistoClearwaMASCOTExamples252;callistoClearwaMASCOTExamples164;callistoClearwaMASCOTExamples8;callistoClearwaMASCOTExamples216;callistoClearwaMASCOTExamples235;callistoClearwaMASCOTExamples246;callistoClearwaMASCOTExamples221">
+    <children xsi:type="editmodel:CompartmentEditModel" size="114,108">
+      <children xsi:type="editmodel:AttributeEditModel" id="callistoClearwaMASCOTExamples148"/>
+      <children xsi:type="editmodel:AttributeEditModel" id="callistoClearwaMASCOTExamples161"/>
+      <children xsi:type="editmodel:AttributeEditModel" id="callistoClearwaMASCOTExamples164"/>
+      <children xsi:type="editmodel:AttributeEditModel" id="callistoClearwaMASCOTExamples219"/>
+      <children xsi:type="editmodel:AttributeEditModel" id="callistoClearwaMASCOTExamples221"/>
+      <children xsi:type="editmodel:AttributeEditModel" id="callistoClearwaMASCOTExamples228"/>
+      <children xsi:type="editmodel:AttributeEditModel" id="callistoClearwaMASCOTExamples252"/>
+      <children xsi:type="editmodel:AttributeEditModel" id="callistoClearwaMASCOTExamples246"/>
+      <children xsi:type="editmodel:AttributeEditModel" id="callistoClearwaMASCOTExamples250"/>
+      <children xsi:type="editmodel:AttributeEditModel" id="callistoClearwaMASCOTExamples248"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,108">
+      <children xsi:type="editmodel:MethodEditModel" id="callistoClearwaMASCOTExamples4"/>
+      <children xsi:type="editmodel:MethodEditModel" id="callistoClearwaMASCOTExamples8"/>
+      <children xsi:type="editmodel:MethodEditModel" id="callistoClearwaMASCOTExamples11"/>
+      <children xsi:type="editmodel:MethodEditModel" id="callistoClearwaMASCOTExamples216"/>
+      <children xsi:type="editmodel:MethodEditModel" id="callistoClearwaMASCOTExamples235"/>
+      <children xsi:type="editmodel:MethodEditModel" id="callistoClearwaMASCOTExamples237"/>
+      <children xsi:type="editmodel:MethodEditModel" id="callistoClearwaMASCOTExamples262"/>
+      <children xsi:type="editmodel:MethodEditModel" id="callistoClearwaMASCOTExamples267"/>
+      <children xsi:type="editmodel:MethodEditModel" id="callistoClearwaMASCOTExamples264"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="352,83" size="139,135" id="callistoClearwaMASCOTExamples72" runTimeClassModel="callistoClearwaMASCOTExamples184;callistoClearwaMASCOTExamples88;callistoClearwaMASCOTExamples112;callistoClearwaMASCOTExamples76">
+    <children xsi:type="editmodel:CompartmentEditModel" size="116,18">
+      <children xsi:type="editmodel:AttributeEditModel" id="callistoClearwaMASCOTExamples76"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="113,54">
+      <children xsi:type="editmodel:MethodEditModel" id="callistoClearwaMASCOTExamples112"/>
+      <children xsi:type="editmodel:MethodEditModel" id="callistoClearwaMASCOTExamples88"/>
+      <children xsi:type="editmodel:MethodEditModel" id="callistoClearwaMASCOTExamples184"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true"/>
+  </children>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" shortPackageNameFormat="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showClassStereotype="true" showPackageStereotype="true"/>
+</editmodel:ClassDiagramEditModel>

@@ -1,0 +1,22 @@
+<project name="jarBuild" basedir="." default="buildit" >
+	
+	<property name="target.jar.dir" value="/opt/DPCT3/DPCT/jar"/>
+	<property name="target.lib.dir" value="/opt/DPCT3/DPCT/lib"/>
+
+	<target name="init">
+		<tstamp />
+	</target>
+	
+	<fileset id="cp.jars" dir="${target.jar.dir}">
+		<include name="**/*.jar" />
+		<exclude name="dpctaccess.jar" />
+	</fileset>
+	
+	<!-- ================================= 
+          target: buildit              
+         ================================= -->
+    <target name="buildit" depends="init" description="--> description">
+		<copy overwrite="true" file="dist/bundles/swing-worker.jar" todir="${target.jar.dir}" />
+    </target>
+
+</project>

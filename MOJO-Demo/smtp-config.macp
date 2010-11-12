@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This is the configuration file for an instance of the Compliance Server to run on Callisto or Ganymede.  
+
+For any particular installation
+this file set the configuration constants for the entities in the SMTP server set.  The SET file 
+smtp-baseline.macp needs to be included with this file to create a working installaion.  This
+baseline file defines all of the needed for the configuration server to run.
+-->
+<SETS>
+	<SET name="SMTP Server" >
+		<arguments>
+			<String index="session-subsystem" value="smtp-session"/>
+			<String index="device-pool" value="smtp-device"/>
+			<String index="relay-host" value="localhost"/>
+			<String index="relay-port" value="25"/>
+		</arguments>
+		<Subsystem type="global" name="Servers">
+			<!--
+			This is the capture server.  It acts as a sink for client requests.  In other words, messages
+			sent to this server will not be relayed; they are simply put into the database and then
+			dumped.  It is currently not used in the Eastbury configuration.
+			-->
+			<subsys-ref name="smtp-capture" close_on_empty="true">
+				<arguments>
+					<String index="pdir" value="../persist/smtp-capture"/>
+					<String index="device" value="server-device-capture"/>
+					<String index="local-name" value="device-1"/>
+					<String index="port" value="10025"/>
+				</arguments>
+			</subsys-ref>
+			<!--       
+			This is the outgoing relay server.  It services client (email packages of one kind or another) on port 9026
+			and relys then to port 25 on Eastbury's primary email server (currently server1 on the Eastbury network) which
+			passes it out the door or delivers to internal users.
+			-->
+			<subsys-ref name="smtp-outgoing" close_on_empty="true">
+				<arguments>
+					<String index="pdir" value="../persist/smtp-outgoing"/>
+					<String index="device" value="server-device-outgoing"/>
+					<String index="local-name" value="device-2"/>
+					<String index="port" value="9026"/>
+					<String index="is-relay" value="true"/>
+				</arguments>
+			</subsys-ref>
+			<!--
+			This is the incoming server.  The external relay server points to port 9025.  Mail arriving on that port
+			is entered into the database and then forwarded on to the internal server (currently server1 on the Eastbury network)
+			which then delivers it to internal users.
+			-->
+			<subsys-ref name="smtp-incoming" close_on_empty="true">
+				<arguments>
+					<String index="pdir" value="../persist/smtp-incoming"/>
+					<String index="device" value="server-device-incoming"/>
+					<String index="local-name" value="device-3"/>
+					<String index="port" value="9025"/>
+					<String index="is-relay" value="true"/>
+				</arguments>
+			</subsys-ref>
+		</Subsystem>
+	</SET>
+</SETS>
+

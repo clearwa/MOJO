@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SETS>
+	<SET name="Container Test" type="global">
+		<Subsystem name="container-test" type="subsystem">
+			<deviceIDA-ref name="echo" reference="echo-device-2"/>
+			<activity-ref name="container-root" reference="">
+				<arguments>
+					<Integer index="2" value="This index arg 2"/>
+					<Integer value="This is index arg 3" index="3"/>
+				</arguments>
+			</activity-ref>
+		</Subsystem>
+		<Activity root="com.objectforge.mascot.machine.unittests.components.ContainerTestRoot" name="container-root"/>
+	</SET>
+</SETS>

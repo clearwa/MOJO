@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SETS>
+	<SET name="SMTP Server">
+		<Device device-name="smtp-device" handler="smtp-handler"/>
+		<Device device-name="socket-device" handler="socket-handler"/>
+		<IDA imp="smtp-device" name="server-device-capture" type="device"/>
+		<IDA imp="smtp-device" name="server-device-outgoing" type="device"/>
+		<IDA imp="smtp-device" name="server-device-incoming" type="device"/>
+		<IDA imp="com.objectforge.mascot.prevayler.PersistentChannel" name="mail-channel" type="channel"/>
+		<Activity name="SMTP Hosts" root="com.objectforge.arcitech.smtp.SMTPIncarnateHost"/>
+		<Activity name="SMTP Sessions" root="com.objectforge.arcitech.smtp.SMTPIncarnateSessions"/>
+		<Subsystem close_on_empty="true" name="smtp-capture" type="subsystem">
+			<deviceIDA-ref name="server-device-capture"/>
+			<globalIDA-ref name="logger-port"/>
+			<localIDA-ref name="mail-channel"/>
+			<subsys-ref name="SMTP Process"/>
+			<activity-ref name="SMTP Hosts"/>
+			<activity-ref name="SMTP Sessions"/>
+		</Subsystem>
+		<Subsystem close_on_empty="true" name="smtp-outgoing" type="subsystem">
+			<deviceIDA-ref name="server-device-outgoing"/>
+			<globalIDA-ref name="logger-port"/>
+			<localIDA-ref name="mail-channel"/>
+			<subsys-ref name="SMTP Process"/>
+			<activity-ref name="SMTP Hosts"/>
+			<activity-ref name="SMTP Sessions"/>
+			<subsys-ref name="Relay Client"/>
+		</Subsystem>
+		<Subsystem close_on_empty="true" name="smtp-incoming" type="subsystem">
+			<deviceIDA-ref name="server-device-incoming"/>
+			<globalIDA-ref name="logger-port"/>
+			<localIDA-ref name="mail-channel"/>
+			<subsys-ref name="SMTP Process"/>
+			<activity-ref name="SMTP Hosts"/>
+			<activity-ref name="SMTP Sessions"/>
+			<subsys-ref name="Relay Client"/>
+		</Subsystem>
+		<Activity name="ClientHandler" root="com.objectforge.mascot.IDA.telnet.roots.TelnetClientDevice"/>
+		<Subsystem name="socket-handler" type="handler">
+			<localIDA-ref name="reader" reference="serial-channel"/>
+			<localIDA-ref name="writer" reference="serial-channel"/>
+			<activity-ref name="ClientHandler"/>
+		</Subsystem>
+		<Activity name="SMTPHandler" root="com.objectforge.arcitech.smtp.SMTPServerDevice"/>
+		<IDA imp="com.objectforge.mascot.IDA.TokenPool" name="token-pool" type="pool"/>
+		<Subsystem name="smtp-handler" type="handler">
+			<localIDA-ref name="reader" reference="serial-channel"/>
+			<localIDA-ref name="writer" reference="serial-channel"/>
+			<activity-ref name="SMTPHandler">
+				<arguments>
+					<Integer index="2" value="50"/>
+				</arguments>
+			</activity-ref>
+			<localIDA-ref name="token-pool"/>
+		</Subsystem>
+		<Activity name="SMTP Session" root="com.objectforge.arcitech.smtp.SMTPSession"/>
+		<Subsystem close_on_empty="true" name="smtp-session" type="subsystem">
+			<activity-ref name="SMTP Session"/>
+			<argumentIDA-ref name="input" reference="0"/>
+			<argumentIDA-ref name="output" reference="1"/>
+			<containerIDA-ref name="mail-channel"/>
+			<globalIDA-ref name="logger-port"/>
+		</Subsystem>
+		<Subsystem close_on_empty="true" name="SMTP Process" type="subsystem">
+			<containerIDA-ref name="mail-channel"/>
+			<globalIDA-ref name="logger-port"/>
+			<subsys-ref close_on_empty="true" name="SMTP Proc T1" reference="SMTP Proc T1"/>
+			<subsys-ref close_on_empty="true" name="SMTP Proc T2" reference="SMTP Proc T1"/>
+		</Subsystem>
+		<Activity name="SMTP PT1" root="com.objectforge.arcitech.smtp.SMTProcess"/>
+		<Subsystem name="SMTP Proc T1" type="subsystem">
+			<containerIDA-ref name="mail-channel"/>
+			<globalIDA-ref name="logger-port"/>
+			<activity-ref name="SMTP PT1"/>
+		</Subsystem>
+		<Activity name="Relay" root="com.objectforge.arcitech.smtp.SMTPClient"/>
+		<IDA imp="socket-device" name="sockets" type="device"/>
+		<Subsystem name="Relay Client" type="subsystem">
+			<activity-ref name="Relay"/>
+			<globalIDA-ref name="logger-port"/>
+			<containerIDA-ref name="mail-channel"/>
+			<deviceIDA-ref name="sockets"/>
+		</Subsystem>
+		<Activity name="SMTP Replay" root="com.objectforge.arcitech.smtp.SMTPReplay"/>
+		<Subsystem name="Replay Client" type="subsystem">
+			<activity-ref name="SMTP Replay"/>
+			<globalIDA-ref name="logger-port"/>
+			<containerIDA-ref name="mail-channel"/>
+		</Subsystem>
+	</SET>
+</SETS>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+$Id$
+ 
+Copyright © 2005 Sun Microsystems, Inc. All rights
+reserved. Use is subject to license terms.
+-->
+<project name="SwingWorker" default="compile" basedir=".">
+    <property name="src.dir" value="src/java" />
+    <property name="test.dir" value="src/test" />
+    <property name="demo.dir" value="src/demo" />
+    <property name="build.dir" value="build" />
+    <property name="dist.dir" value="dist" />
+    <property name="javadoc.dir" value="${dist.dir}/javadoc" />
+    <property name="bundles.dir" value="${dist.dir}/bundles" />
+    <property name="www.dir" value="www" />
+    
+    <property name="external.doc" 
+        value="http://java.sun.com/j2se/1.5.0/docs/api" />
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+    
+    <target name="init">
+        <mkdir dir="${build.dir}"/>
+         <tstamp/>
+    </target>
+    
+    <target name="init-dist">
+        <mkdir dir="${dist.dir}"/>
+    </target>
+    
+    <target name="compile" depends="init">
+        <javac source="1.5" destdir="${build.dir}" memoryMaximumSize="200m" fork="yes">
+            <src path="${src.dir}" />
+        </javac>
+    </target>
+
+    <target name="demo" depends="compile">
+        <javac source="1.5" destdir="${build.dir}" memoryMaximumSize="200m" fork="yes">
+            <src path="${demo.dir}" />
+        </javac>
+        <java classpath="${build.dir}" 
+            classname="org.jdesktop.swingworker.PrimeNumbersDemo" fork="true" />
+    </target>
+    
+    <target name="test" depends="compile">
+        <javac source="1.5" destdir="${build.dir}" memoryMaximumSize="200m" fork="yes">
+            <src path="${test.dir}" />
+         </javac>
+         <junit printsummary="yes" showoutput="yes" fork="yes">
+             <formatter type="plain"/>
+             <classpath> 
+                 <dirset dir="${build.dir}"/>
+             </classpath>
+             <test name="org.jdesktop.swingworker.SwingWorkerTest"/>
+         </junit>
+    </target>
+    
+    <target name="javadoc" depends="init-dist">
+        <javadoc access="protected" link="" 
+            packagenames="org.jdesktop.swingworker" author="true" destdir="${javadoc.dir}" 
+            nodeprecated="false" nodeprecatedlist="false" noindex="false" 
+            nonavbar="false" notree="false" use="true" version="true">
+            <link href="${external.doc}" />
+            <sourcepath>
+                <pathelement path="${src.dir}" />
+            </sourcepath>
+        </javadoc>
+    </target>
+    
+    <target name="bundles" depends="clean, compile, javadoc">
+        <mkdir dir="${bundles.dir}"/>
+        <zip basedir="." destfile="${bundles.dir}/swing-worker-src.zip"
+            includes="src/**, build.xml, COPYING"
+        />
+        <zip basedir="${javadoc.dir}" destfile="${bundles.dir}/swing-worker-doc.zip"/> 
+        <jar basedir="${build.dir}" destfile="${bundles.dir}/swing-worker.jar"/>
+    </target>
+    
+    <target name="www" depends="clean, javadoc">
+        <delete dir="${www.dir}/javadoc"/>
+        <copy todir="${www.dir}/javadoc">
+            <fileset dir="${javadoc.dir}"/>
+        </copy>
+    </target>
+    
+</project>

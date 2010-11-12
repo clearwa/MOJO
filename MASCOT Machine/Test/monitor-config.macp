@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SETS>
+	<SET name="Monitor">
+		<Subsystem name="global" type="global">
+			<subsys-ref name="system-monitor">
+				<arguments>
+					<Integer index="monitor-port" value="1110"/>
+				</arguments>
+			</subsys-ref>
+		</Subsystem>
+	</SET>
+</SETS>

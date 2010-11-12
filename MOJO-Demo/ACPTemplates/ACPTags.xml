@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<acptagfile>
+	<acptag value="SETS" display-label="SETS">
+		<allowed-new value="Include"/>
+		<allowed-new value="SET"/>			
+	</acptag>
+
+	<acptag value="Include" defaultattr="Filename" display-label="Include">
+		<attrib value="Filename" editor="text"/>
+	</acptag>
+	
+	<acptag value="SET" defaultattr="name" display-label="SET">
+		<attrib value="name" editor="text"/>
+		<allowed-new value="Subsystem"/>
+		<allowed-new value="Activity"/>
+		<allowed-new value="IDA"/>
+		<allowed-new value="Device"/>
+		<allowed-new value="arguments"/>
+	</acptag>
+
+	<acptag value="Subsystem" defaultattr="name" display-label="Subsystem">
+		<attrib value="name" editor="text"/>
+		<attrib value="type" editor="combo">
+			<entry value="subsystem"/>
+			<entry value="handler"/>
+			<entry value="global"/>
+		</attrib>
+		<attrib value="close_on_empty" editor="combo">
+			<entry value="false"/>
+			<entry value="true"/>
+		</attrib>
+		<allowed-new value="activity-ref"/>
+		<allowed-new value="subsys-ref"/>
+		<allowed-new value="localIDA-ref"/>
+		<allowed-new value="containerIDA-ref"/>
+		<allowed-new value="globalIDA-ref"/>
+		<allowed-new value="argumentIDA-ref"/>
+		<allowed-new value="deviceIDA-ref"/>
+	</acptag>
+	
+	<acptag value="subsys-ref" defaultattr="name" display-label="Subsystem Reference">
+		<attrib value="name" editor="text"/>
+		<attrib value="reference" editor="text"/>
+		<attrib value="close_on_empty" editor="combo">
+			<entry value="false"/>
+			<entry value="true"/>
+		</attrib>
+		<allowed-new value="arguments"/>
+	</acptag>
+
+	<acptag value="Activity" defaultattr="name" display-label="Activity">
+		<attrib value="name" editor="text"/>
+		<attrib value="root" editor="text"/>
+		<attrib value="factory" editor="text"/>
+	</acptag>
+
+	<acptag value="activity-ref" defaultattr="name" display-label="Activity Reference">
+		<attrib value="name" editor="text"/>
+		<attrib value="reference" editor="text"/>
+		<allowed-new value="arguments"/>
+	</acptag>
+
+	<acptag value="Device" defaultattr="device-name" display-label="Device">
+		<attrib value="handler" editor="text"/>
+		<attrib value="device-name" editor="text"/>
+	</acptag>
+	
+	<acptag value="IDA" defaultattr="name" display-label="IDA">
+		<attrib value="name" editor="text"/>
+		<attrib value="type" editor="combo">
+			<entry value="channel"/>
+			<entry value="pool"/>
+			<entry value="device"/>
+		</attrib>
+		<attrib value="imp" editor="text"/>
+		<attrib value="factory" editor="text"/>
+	</acptag>
+
+	<acptag value="localIDA-ref" defaultattr="name" display-label="Local IDA Reference">
+		<attrib value="name" editor="text"/>
+		<attrib value="reference" editor="text"/>
+	</acptag>
+
+	<acptag value="containerIDA-ref" defaultattr="name" display-label="Container IDA Reference">
+		<attrib value="name" editor="text"/>
+		<attrib value="reference" editor="text"/>
+	</acptag>
+
+	<acptag value="globalIDA-ref" defaultattr="name" display-label="Global IDA Reference">
+		<attrib value="name" editor="text"/>
+		<attrib value="reference" editor="text"/>
+	</acptag>
+
+	<acptag value="argumentIDA-ref" defaultattr="name" display-label="Argument IDA Reference">
+		<attrib value="name" editor="text"/>
+		<attrib value="reference" editor="text"/>
+	</acptag>
+
+	<acptag value="deviceIDA-ref" defaultattr="name" display-label="Device IDA Reference">
+		<attrib value="name" editor="text"/>
+		<attrib value="reference" editor="text"/>
+	</acptag>
+
+	<acptag value="entity-maps" defaultattr="platform" display-label="Entity Maps">
+		<attrib value="platform" editor="text"/>
+		<allowed-new value="entity-map"/>
+	</acptag>
+
+	<acptag value="entity-map" defaultattr="name" editor="" display-label="Entity Map">
+		<attrib value="name" editor="text"/>
+		<attrib value="imp" editor="text"/>
+	</acptag>
+	
+	<acptag value="arguments" display-label="Arguments" defaultattr="name">
+		<attrib value="name" editor="text"/>
+		<allowed-new value="String"/>
+		<allowed-new value="Integer"/>
+	</acptag>
+
+	<acptag value="String" defaultattr="value" display-label="String Argument">
+		<attrib value="index" editor="text"/>
+		<attrib value="value" editor="text"/>
+	</acptag>
+
+	<acptag value="Integer" defaultattr="value" display-label="Integer Argument">
+		<attrib value="index" editor="text"/>
+		<attrib value="value" editor="text"/>
+	</acptag>
+	
+</acptagfile>

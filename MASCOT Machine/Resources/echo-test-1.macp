@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SETS>
+	<SET name="EchoTest-1" type="global">
+		<Subsystem name="global" type="global">
+			<subsys-ref reference="echo-test" name="echo-test" close_on_empty="true"/>
+		</Subsystem>
+		<Activity name="echo-root" root="com.objectforge.mascot.machine.unittests.components.EchoTestRoot1"/>
+		<Device device-name="echo-device" handler="echo-handler"/>
+		<Activity name="echo-handler-root" root="com.objectforge.mascot.machine.unittests.components.EchoHandlerRoot"/>
+		<IDA name="handler-channel" imp="com.objectforge.mascot.IDA.SerialChannel"/>
+		<IDA type="device" imp="echo-device" name="echo-device-1"/>
+		<Subsystem name="echo-test" type="subsystem">
+			<activity-ref reference="echo-root" name="echo-root"/>
+			<deviceIDA-ref name="echo" reference="echo-device-1"/>
+		</Subsystem>
+		<Subsystem name="echo-handler" type="handler">
+			<localIDA-ref reference="handler-channel" name="reader"/>
+			<localIDA-ref name="writer" reference="handler-channel"/>
+			<activity-ref reference="echo-handler-root" name="device-root"/>
+		</Subsystem>
+	</SET>
+</SETS>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SETS>
+	<SET name="EchoTest-2" type="global">
+		<Subsystem name="global" type="global">
+			<subsys-ref reference="container-test" name="container-test">
+				<arguments>
+					<String index="arg1" value="This is subsystem arg1"/>
+					<String index="arg2" value="This is subsystem arg2"/>
+					<String index="contained" value="echo-test"/>
+				</arguments>
+			</subsys-ref>
+		</Subsystem>
+		<Activity name="echo-root" root="com.objectforge.mascot.machine.unittests.components.EchoTestRoot2"/>
+		<IDA type="device" imp="echo-device" name="echo-device-2"/>
+		<Subsystem name="echo-test" type="subsystem">
+			<activity-ref reference="echo-root" name="echo-root"/>
+		</Subsystem>
+	</SET>
+	<Include Filename="container-test.macp"/>
+</SETS>

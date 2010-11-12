@@ -1,0 +1,10 @@
+PersistentChannel myChannel = new PersistentChannel();
+//myChannel.control( PersistentChannel.PCCREATE,"scraps");
+myChannel.control( PersistentChannel.PCINIT,"scraps");
+myChannel.write( "This is a test");
+System.out.println( myChannel.read() );
+myChannel.control( PersistentChannel.PCSNAPSHOT);
+myChannel.write( "This is another line");
+
+
+

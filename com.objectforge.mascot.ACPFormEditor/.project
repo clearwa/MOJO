@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>com.objectforge.mascot.ACPFormEditor</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.pde.ManifestBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.pde.SchemaBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jem.workbench.JavaEMFNature</nature>
+		<nature>org.eclipse.pde.PluginNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.jem.beaninfo.BeanInfoNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>ACPTemplates</name>
+			<type>2</type>
+			<locationURI>WORKSPACE_LOC/MOJO-Demo/ACPTemplates</locationURI>
+		</link>
+		<link>
+			<name>Jars</name>
+			<type>2</type>
+			<locationURI>WORKSPACE_LOC/MOJO-Demo/Jars</locationURI>
+		</link>
+		<link>
+			<name>MASCOT XML</name>
+			<type>2</type>
+			<locationURI>WORKSPACE_LOC/MASCOT%20XML/MASCOT</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

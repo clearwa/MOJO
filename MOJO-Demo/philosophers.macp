@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SETS>
+	<SET name="Philosophers" type="global">
+		<IDA imp="com.objectforge.mascot.examples.idas.Chopstick" name="chopstick" type="channel"/>
+		<Activity name="Philosopher" root="com.objectforge.mascot.examples.roots.Philosopher"/>
+		<Activity name="PhilosopherRunner" root="com.objectforge.mascot.examples.roots.IncarnatePhilosophers"/>
+		<Activity name="DisplayDiners" root="com.objectforge.mascot.examples.roots.DinersDisplay"/>
+		<Subsystem close_on_empty="true" name="Philosophers" type="subsystem">
+			<localIDA-ref name="chopstick-1" reference="chopstick"/>
+			<localIDA-ref name="chopstick-2" reference="chopstick"/>
+			<localIDA-ref name="chopstick-3" reference="chopstick"/>
+			<localIDA-ref name="chopstick-4" reference="chopstick"/>
+			<localIDA-ref name="chopstick-5" reference="chopstick"/>
+			<localIDA-ref name="chopstick-6" reference="chopstick"/>
+			<activity-ref name="Philosopher1" reference="Philosopher">
+				<arguments>
+					<String index="0" value="1"/>
+					<Integer index="1" value="5000"/>
+					<String index="2" value="chopstick-1"/>
+					<String index="3" value="chopstick-2"/>
+				</arguments>
+			</activity-ref>
+			<activity-ref name="Philosopher2" reference="Philosopher">
+				<arguments>
+					<String index="0" value="2"/>
+					<Integer index="1" value="5000"/>
+					<String index="2" value="chopstick-2"/>
+					<String index="3" value="chopstick-3"/>
+				</arguments>
+			</activity-ref>
+			<activity-ref name="Philosopher3" reference="Philosopher">
+				<arguments>
+					<String index="0" value="3"/>
+					<Integer index="1" value="5000"/>
+					<String index="2" value="chopstick-3"/>
+					<String index="3" value="chopstick-4"/>
+				</arguments>
+			</activity-ref>
+			<activity-ref name="Philosopher4" reference="Philosopher">
+				<arguments>
+					<String index="0" value="4"/>
+					<Integer index="1" value="5000"/>
+					<String index="2" value="chopstick-4"/>
+					<String index="3" value="chopstick-5"/>
+				</arguments>
+			</activity-ref>
+			<activity-ref name="Philosopher5" reference="Philosopher">
+				<arguments>
+					<String index="0" value="5"/>
+					<Integer index="1" value="5000"/>
+					<String index="2" value="chopstick-5"/>
+					<String index="3" value="chopstick-1"/>
+				</arguments>
+			</activity-ref>
+			<!--   Uncomment the the following lines to add a 6th philospher to
+			the display.  You also need to modify the arguments to Philosopher5 to read:
+					<String index="2" value="chopstick-5"/>
+					<String index="3" value="chopstick-6"/>
+         	 -->
+			<!--  
+			<activity-ref name="Philosopher6" reference="Philosopher">
+				<arguments>
+					<String index="0" value="5"/>
+					<Integer index="1" value="5000"/>
+					<String index="2" value="chopstick-6"/>
+					<String index="3" value="chopstick-1"/>
+				</arguments>
+			</activity-ref>
+			  -->
+			<activity-ref name="DisplayDiners">
+				<arguments>
+					<Integer index="0" value="5"/>
+				</arguments>
+			</activity-ref>
+			<containerIDA-ref name="status-pool"/>
+		</Subsystem>
+		<Subsystem name="IncarnateDiners" type="subsystem">
+			<activity-ref name="PhilosopherRunner"/>
+			<localIDA-ref name="status-pool"/>
+			<argumentIDA-ref name="input" reference="0"/>
+			<argumentIDA-ref name="putput" reference="1"/>
+		</Subsystem>
+	</SET>
+</SETS>

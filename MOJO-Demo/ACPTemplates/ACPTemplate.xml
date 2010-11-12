@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The template for a new acp SET file -->
+<SETS>
+	<SET name="**Template**" >
+		<Subsystem name="global" type="global">
+		</Subsystem>
+		
+		<Subsystem name="subsystem" type="subsystem">
+		</Subsystem>
+	</SET>
+</SETS>
+

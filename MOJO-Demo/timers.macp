@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SETS>
+	<SET name="Timer Test" type="global">
+		<Activity root="com.objectforge.mascot.examples.roots.Timer" name="Timer"/>
+		<Activity root="com.objectforge.mascot.examples.roots.ChannelReader" name="channel-reader"/>
+		<Subsystem name="timer-test" type="subsystem" close_on_empty="true">
+			<activity-ref name="channel-reader" reference="channel-reader"/>
+			<activity-ref name="timer-1" reference="Timer">
+				<arguments>
+					<String index="0" value="Timer 1"/>
+					<Integer index="1" value="200"/>
+				</arguments>
+			</activity-ref>
+ 			<activity-ref name="timer-2" reference="Timer">
+				<arguments>
+					<String index="0" value="Timer 2"/>
+					<Integer index="1" value="205"/>
+				</arguments>
+			</activity-ref>
+			<activity-ref name="timer-3" reference="Timer">
+				<arguments>
+					<String index="0" value="Timer 3"/>
+					<Integer index="1" value="207"/>
+				</arguments>
+			</activity-ref>
+			<activity-ref name="timer-4" reference="Timer">
+				<arguments>
+					<String index="0" value="Timer 4"/>
+					<Integer index="1" value="213"/>
+				</arguments>
+			</activity-ref>
+			<activity-ref name="timer-5" reference="Timer">
+				<arguments>
+					<String index="0" value="Timer 5"/>
+					<Integer index="1" value="219"/>
+				</arguments>
+			</activity-ref>
+			<globalIDA-ref name="serial-cha1"/>
+			<argumentIDA-ref name="timer-config" reference="1"/>
+			<argumentIDA-ref name="reader-channel" reference="0"/>
+		</Subsystem>
+	</SET>
+</SETS>

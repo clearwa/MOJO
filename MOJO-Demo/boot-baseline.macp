@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SETS>
+	<SET name="Telnet Server">
+		<arguments>
+			<String index="device-implementation" value="telnet-device"/>
+		</arguments>
+		<Device device-name="telnet-device" handler="telnet-handler"/>
+		<IDA name="serial-channel" imp="com.objectforge.mascot.IDA.SerialChannel" type="channel"/>
+		<IDA name="telnet-serial-channel" imp="com.objectforge.mascot.IDA.telnet.TelnetSerialChannel" type="channel"/>
+		<Activity name="IncarnateHosts" root="com.objectforge.mascot.telnet.roots.IncarnateHosts"/>
+		<Activity name="IncarnateHost" root="com.objectforge.mascot.telnet.roots.IncarnateHost"/>
+		<Activity name="IncarnateSessions" root="com.objectforge.mascot.IDA.telnet.roots.IncarnateSessions"/>
+		<Activity name="TelnetHandler" root="com.objectforge.mascot.IDA.telnet.roots.TelnetServerDevice"/>
+		<Activity name="SessionReader" root="com.objectforge.mascot.IDA.telnet.roots.SessionReader"/>
+		<Activity name="SessionWriter" root="com.objectforge.mascot.IDA.telnet.roots.SessionWriter"/>
+		<Activity name="TelnetConsole" root="com.objectforge.mascot.telnet.roots.TelnetConsole"/>
+		<IDA name="status-pool" imp="com.objectforge.mascot.IDA.StatusPool" type="pool"/>
+		<Subsystem name="telnet-handler" type="handler">
+			<localIDA-ref reference="serial-channel" name="reader"/>
+			<localIDA-ref reference="serial-channel" name="writer"/>
+			<activity-ref name="TelnetHandler"/>
+		</Subsystem>
+		<Subsystem name="TelnetIncarnateSession" type="subsystem">
+			<localIDA-ref name="reader" reference="telnet-serial-channel"/>
+			<localIDA-ref name="writer" reference="telnet-serial-channel"/>
+		</Subsystem>
+		<Subsystem name="TelnetSession" type="subsystem">
+			<containerIDA-ref name="reader"/>
+			<containerIDA-ref name="writer"/>
+			<argumentIDA-ref reference="1" name="token-pool"/>
+			<activity-ref name="SessionReader"/>
+			<activity-ref name="SessionWriter"/>
+		</Subsystem>
+		<Subsystem name="MascotConsole" type="subsystem">
+			<activity-ref name="TelnetConsole"/>
+			<argumentIDA-ref name="input" reference="0"/>
+			<argumentIDA-ref name="output" reference="1"/>
+			<localIDA-ref name="serial-cha1" reference="serial-channel"/>
+			<localIDA-ref name="timer-config" reference="serial-channel"/>
+			<localIDA-ref name="reader-channel" reference="serial-channel"/>
+			<localIDA-ref name="status-pool" reference="status-pool"/>
+		</Subsystem>
+		<Subsystem name="global" type="global">
+			<localIDA-ref reference="serial-channel" name="serial-cha1"/>
+		</Subsystem>
+		<Subsystem name="CreateService" type="subsystem" close_on_empty="true">
+			<activity-ref name="IncarnateHost"/>
+		</Subsystem>
+	</SET>
+</SETS>
