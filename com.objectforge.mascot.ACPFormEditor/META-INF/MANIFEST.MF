@@ -1,73 +1,13 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: MOJO 2010 ACP Editor
+Bundle-Name: ACPFormEditor
 Bundle-SymbolicName: com.objectforge.mascot.ACPFormEditor;singleton:=true
-Bundle-Version: 1.1.10
+Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: ACPFormEditor.jar
-Bundle-Activator: com.objectforge.mascot.ACPFormEditor.internal.ACPFormEditorPlugin
-Bundle-Vendor: Object Forge Ltd.
+Bundle-Activator: com.objectforge.mascot.acpformeditor.Activator
+Bundle-Vendor: OBJECTFORGE
 Bundle-Localization: plugin
-Export-Package: com,
- com.objectforge,
- com.objectforge.mascot,
- com.objectforge.mascot.ACPFormEditor.docprovider;
-  uses:="org.eclipse.jface.text,
-   com.objectforge.mascot.ACPFormEditor.model.xml,
-   org.eclipse.jface.resource,
-   org.eclipse.core.resources,
-   org.eclipse.ui.part,
-   org.eclipse.ui.editors.text",
- com.objectforge.mascot.ACPFormEditor.internal;x-internal:=true;
-  uses:="com.objectforge.mascot.ACPFormEditor.model.xml,
-   org.eclipse.core.runtime,
-   org.eclipse.ui,
-   org.eclipse.ui.plugin,
-   org.eclipse.ui.part,
-   com.objectforge.mascot.ACPFormEditor.pages.xml,
-   org.eclipse.jface.action,
-   org.eclipse.ui.forms.editor,
-   org.eclipse.jface.viewers,
-   org.osgi.framework,
-   com.objectforge.mascot.ACPFormEditor.docprovider,
-   org.eclipse.swt.widgets,
-   com.objectforge.mascot.ACPFormEditor.pages",
- com.objectforge.mascot.ACPFormEditor.internal.images;x-internal:=true,
- com.objectforge.mascot.ACPFormEditor.internal.wizards;x-internal:=true;
-  uses:="org.eclipse.jface.wizard,
-   org.eclipse.ui,
-   org.eclipse.jface.viewers,
-   org.eclipse.swt.widgets",
- com.objectforge.mascot.ACPFormEditor.model.xml;uses:="com.objectforge.mascot.xml,org.w3c.dom",
- com.objectforge.mascot.ACPFormEditor.pages;
-  uses:="com.objectforge.mascot.ACPFormEditor.model.xml,
-   com.objectforge.mascot.ACPFormEditor.internal,
-   org.eclipse.swt.events,
-   org.w3c.dom,
-   org.eclipse.ui.forms,
-   org.eclipse.ui.forms.widgets,
-   org.eclipse.jface.action,
-   org.eclipse.ui.forms.editor,
-   org.eclipse.jface.viewers,
-   org.eclipse.swt.graphics,
-   org.eclipse.swt.widgets",
- com.objectforge.mascot.ACPFormEditor.pages.xml;
-  uses:="org.eclipse.jface.text,
-   org.eclipse.jface.text.source,
-   org.eclipse.core.runtime,
-   com.objectforge.mascot.ACPFormEditor.internal,
-   org.eclipse.ui,
-   org.eclipse.jface.text.rules,
-   org.eclipse.ui.forms,
-   org.eclipse.jface.action,
-   org.eclipse.ui.forms.editor,
-   org.eclipse.jface.text.presentation,
-   org.eclipse.swt.graphics,
-   org.eclipse.swt.widgets,
-   org.eclipse.ui.editors.text",
- com.objectforge.mascot.utility,
- com.objectforge.mascot.xml;uses:="javax.xml.parsers,org.w3c.dom",
- com.swtdesigner;uses:="org.eclipse.jface.resource,org.eclipse.swt.graphics,org.eclipse.swt.widgets",
- swing2swt.layout;uses:="org.eclipse.swt.graphics,org.eclipse.swt.widgets"
+Export-Package: com.objectforge.mascot.acpformeditor;version="1.0.0.qualifier"
 Require-Bundle: org.eclipse.core.resources,
  org.eclipse.jface,
  org.eclipse.jface.text,
@@ -79,5 +19,8 @@ Require-Bundle: org.eclipse.core.resources,
  org.eclipse.ui.workbench,
  org.eclipse.core.runtime,
  org.eclipse.ui.workbench.texteditor,
- org.eclipse.ui.forms
+ org.eclipse.ui.forms,
+ org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
