@@ -13,7 +13,7 @@ import org.w3c.dom.Node;
 
 /**
  * @author Allan Clearwaters
- * @version $Id$, $Name:  $
+ * @version $Id: TableValue.java 72 2007-07-09 07:15:18Z  $, $Name:  $
  *
  */
 public class TableValue {

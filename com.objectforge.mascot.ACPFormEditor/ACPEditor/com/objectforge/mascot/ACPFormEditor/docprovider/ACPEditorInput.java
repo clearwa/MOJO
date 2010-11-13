@@ -15,7 +15,7 @@ import org.eclipse.ui.part.FileEditorInput;
 
 /**
  * @author Allan Clearwaters
- * @version $Id$, $Name:  $
+ * @version $Id: ACPEditorInput.java 72 2007-07-09 07:15:18Z  $, $Name:  $
  *
  */
 public class ACPEditorInput extends FileEditorInput {

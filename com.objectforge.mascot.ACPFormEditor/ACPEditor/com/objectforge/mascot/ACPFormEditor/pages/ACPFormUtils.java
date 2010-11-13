@@ -41,7 +41,7 @@ import com.objectforge.mascot.xml.TagtableEntry;
 
 /**
  * @author Allan Clearwaters
- * @version $Id$,
+ * @version $Id: ACPFormUtils.java 72 2007-07-09 07:15:18Z  $,
  *          $Name$
  * 
  */

@@ -24,7 +24,7 @@ import com.objectforge.mascot.ACPFormEditor.internal.ACPFormEditorPlugin;
 import com.objectforge.mascot.xml.AbstractMachineXML;
 /**
  * @author Allan Clearwaters
- * @version $Id$, $Name:  $
+ * @version $Id: ACPxml.java 72 2007-07-09 07:15:18Z  $, $Name:  $
  *
  */
 public class ACPxml extends AbstractMachineXML {
