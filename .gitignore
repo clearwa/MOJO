@@ -1,0 +1,15 @@
+.DS_Store
+#Ignore any editor backup files
+*~
+#Ignore class files in the bin direcory
+*/bin/*
+#Ignore svn directories'
+.svn
+#Workspace metadata
+.metadata
+#The prevayler test directories
+*/pc_testdir/*
+#Ignore generated documentaiton files
+MOJO-Demo/*/doc
+MOJO-Demo/doc
+
