@@ -1,4 +1,4 @@
-<project name="MOJO Demonstration" basedir="." default="MOJO2010zip" >
+<project name="MOJO Demonstration" basedir="." default="Delivery" xmlns:doxygen="antlib:org.doxygen.tools">
 
 	<property name="demo.dir" value="MOJO 2010"/>
 	<property name="prevayler.jar" value="Jars/prevayler-2.3.jar"/>
@@ -72,6 +72,11 @@
 		</javadoc>
 	</target>
 
+	<target name="Doxygen" depends="init" >
+		<doxygen:doxygen doxygenPath="/opt/local/bin/doxygen" configFilename="${basedir}/MASCOT Machine.doxyfile" />
+		<doxygen:doxygen doxygenPath="/opt/local/bin/doxygen" configFilename="${basedir}/MOJO Sets Editor.doxyfile" />
+	</target>
+
 	<target name="Editordocs" depends="init" description="ACP Editor documentation">
 		<javadoc destdir="doc/ACP Editor"
 		           author="true"
@@ -121,7 +126,7 @@
 		<delete file="MOJOdemo.jar"/>
 	</target>
 
-	<target name="Delivery" depends="MOJOzip,MOJOdemo,MOJOdocs,Editordocs" description="Copy to the delivery directory">
+	<target name="Delivery" depends="MOJOzip,MOJOdemo,Doxygen" description="Copy to the delivery directory">
 		<delete dir="${demo.dir}"/>
 		<mkdir dir="${demo.dir}"/>
 		<copy overwrite="true" file="MASCOT.jar" todir="${demo.dir}" />
@@ -152,6 +157,7 @@
 			<fileset dir="../2010 ACP Editor Update">
 				<include name="**"/>
 				<exclude name=".*"/>
+				<exclude name="bin"/>
 			</fileset>
 		</copy>
 	</target>
