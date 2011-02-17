@@ -12,4 +12,7 @@
 #Ignore generated documentaiton files
 MOJO-Demo/*/doc
 MOJO-Demo/doc
+#Stuff I don't care about
+Que Stuff/*
+
 
