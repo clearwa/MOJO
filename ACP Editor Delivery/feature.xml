@@ -2,7 +2,7 @@
 <feature
       id="com.objectforge.mascot.ACPFormEditor"
       label="The Mascot 2010 ACP Editor"
-      version="1.1.10"
+      version="2.1.2"
       provider-name="Object Forge Ltd."
       plugin="com.objectforge.mascot.ACPFormEditor">
 
@@ -30,16 +30,11 @@ in Java) please refer to the URL below.
 
    <requires>
       <import plugin="org.eclipse.core.resources"/>
-      <import plugin="org.eclipse.jface"/>
       <import plugin="org.eclipse.jface.text"/>
-      <import plugin="org.eclipse.swt"/>
-      <import plugin="org.eclipse.text"/>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.ui.editors"/>
       <import plugin="org.eclipse.ui.ide"/>
-      <import plugin="org.eclipse.ui.workbench"/>
       <import plugin="org.eclipse.core.runtime"/>
-      <import plugin="org.eclipse.ui.workbench.texteditor"/>
       <import plugin="org.eclipse.ui.forms"/>
    </requires>
 

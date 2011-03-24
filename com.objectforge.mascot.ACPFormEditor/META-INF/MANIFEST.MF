@@ -2,8 +2,9 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: MOJO 2010 ACP Editor
 Bundle-SymbolicName: com.objectforge.mascot.ACPFormEditor;singleton:=true
-Bundle-Version: 1.1.10
-Bundle-ClassPath: ACPFormEditor.jar
+Bundle-Version: 2.1.2
+Bundle-ClassPath: ACPFormEditor.jar,
+ bin
 Bundle-Activator: com.objectforge.mascot.ACPFormEditor.internal.ACPFormEditorPlugin
 Bundle-Vendor: Object Forge Ltd.
 Bundle-Localization: plugin
@@ -61,20 +62,13 @@ Export-Package: com.objectforge.mascot.ACPFormEditor.docprovider;
    org.eclipse.swt.graphics,
    org.eclipse.swt.widgets,
    org.eclipse.ui.editors.text",
- com.objectforge.mascot.utility,
- com.objectforge.mascot.xml;uses:="javax.xml.parsers,org.w3c.dom",
  com.swtdesigner;uses:="org.eclipse.jface.resource,org.eclipse.swt.graphics,org.eclipse.swt.widgets",
  swing2swt.layout;uses:="org.eclipse.swt.graphics,org.eclipse.swt.widgets"
 Require-Bundle: org.eclipse.core.resources,
- org.eclipse.jface,
  org.eclipse.jface.text,
- org.eclipse.swt,
- org.eclipse.text,
  org.eclipse.ui,
  org.eclipse.ui.editors,
  org.eclipse.ui.ide,
- org.eclipse.ui.workbench,
  org.eclipse.core.runtime,
- org.eclipse.ui.workbench.texteditor,
  org.eclipse.ui.forms
 Bundle-ActivationPolicy: lazy
