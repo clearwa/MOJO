@@ -154,7 +154,7 @@
 			</fileset>
 		</copy>
 		<copy overwrite="true" todir="${demo.dir}/2010 ACP Editor Update">
-			<fileset dir="../2010 ACP Editor Update">
+			<fileset dir="../ACP Editor Update">
 				<include name="**"/>
 				<exclude name=".*"/>
 				<exclude name="bin"/>
