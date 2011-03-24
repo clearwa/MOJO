@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<site>
-   <feature url="features/com.objectforge.mascot.ACPFormEditor_1.1.10.jar" id="com.objectforge.mascot.ACPFormEditor" version="1.1.10">
-      <category name="ACP_Editor_Update"/>
-   </feature>
-   <category-def name="ACP_Editor_Update" label="2010 ACP Editors"/>
-</site>
