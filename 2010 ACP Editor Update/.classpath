@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="lib" path="artifacts.jar"/>
-	<classpathentry kind="lib" path="content.jar"/>
-	<classpathentry kind="lib" path="features/com.objectforge.mascot.ACPFormEditor_1.1.10.jar"/>
-	<classpathentry kind="lib" path="plugins/com.objectforge.mascot.ACPFormEditor_1.1.10.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="output" path="bin"/>
-</classpath>
