@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.objectforge.mascot.ACPFormEditor_2.1.2.jar" id="com.objectforge.mascot.ACPFormEditor" version="2.1.2">
-      <category name="acp_editor_2010"/>
+   <feature url="features/com.objectforge.mascot.ACPFormEditor_2.1.3.jar" id="com.objectforge.mascot.ACPFormEditor" version="2.1.3">
+      <category name="mascot_acp_editor"/>
    </feature>
-   <category-def name="acp_editor_2010" label="The Mascot ACP Editor (2010)"/>
+   <category-def name="mascot_acp_editor" label="MASCOT"/>
 </site>

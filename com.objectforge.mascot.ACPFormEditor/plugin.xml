@@ -8,14 +8,14 @@
 	        icon="icons/MOJO_16.gif"
 	        default="true"
 	        contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
-	        name="Mascot ACP Editor"
+	        name="%editor.name"
 	        id="com.objectforge.mascot.ACPFormEditor"
 	        extensions="macp"/>
 	</extension>
 	<extension
 	     point="org.eclipse.ui.newWizards">
 	  <category
-	        name="MOJO"
+	        name="%category.name"
 	        id="com.objectforge.mascot.ACPFormEditor.internal"/>
 	  <wizard
 	        category="com.objectforge.mascot.ACPFormEditor.internal"
@@ -24,7 +24,7 @@
 	        hasPages="true"
 	        icon="icons/MOJO_16.gif"
 	        id="com.objectforge.mascot.ACPFormEditor.internal.wizards.SETDocumentWizard"
-	        name="MOJO Structured SETs Editor"
+	        name="%wizard.name"
 	        project="false"/>
 	</extension>
 

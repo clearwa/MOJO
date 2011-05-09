@@ -2,7 +2,7 @@
 <feature
       id="com.objectforge.mascot.ACPFormEditor"
       label="The Mascot 2010 ACP Editor"
-      version="2.1.2"
+      version="2.1.3"
       provider-name="Object Forge Ltd."
       plugin="com.objectforge.mascot.ACPFormEditor">
 

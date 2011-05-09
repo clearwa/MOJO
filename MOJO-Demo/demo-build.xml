@@ -47,6 +47,7 @@
 
 	<target name="MOJOdocs" depends="init" description="Build MOJO documentation">
 		<delete dir="doc"/>
+		<mkdir dir="doc"/>
 		<javadoc destdir="${basedir}/doc/MOJO"
 		           author="true"
 		           version="true"
@@ -73,8 +74,15 @@
 	</target>
 
 	<target name="Doxygen" depends="init" >
-		<doxygen:doxygen doxygenPath="/opt/local/bin/doxygen" configFilename="${basedir}/MASCOT Machine.doxyfile" />
-		<doxygen:doxygen doxygenPath="/opt/local/bin/doxygen" configFilename="${basedir}/MOJO Sets Editor.doxyfile" />
+		<delete dir="doc"/>
+		<mkdir dir="doc/MASCOT_Machine"/>
+		<mkdir dir="doc/MOJO_SETs_Editor"/>
+		<exec executable="doxygen">
+			<arg value="MASCOT Machine.doxyfile" />
+		</exec>
+		<exec executable="doxygen">
+			<arg value="MOJO Sets Editor.doxyfile" />
+		</exec>
 	</target>
 
 	<target name="Editordocs" depends="init" description="ACP Editor documentation">

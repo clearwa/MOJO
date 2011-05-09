@@ -1,0 +1,4 @@
+System.out.println("MY_PATH - " + System.getenv("MY_PATH"));
+System.out.println("PATH - " + System.getenv("PATH"));
+System.out.println("MY_BASH_PATH - " + System.getenv("MY_BASH_PATH"));
+System.out.println("ECLIPSE_PATH - " + System.getenv("ECLIPSE_PATH"));
