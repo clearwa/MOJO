@@ -151,7 +151,7 @@
 		<copy overwrite="true" file="MOJOsrc.zip" todir="${demo.dir}" />
 		<delete dir="${demo.dir}/doc"/>
 		<mkdir dir="${demo.dir}/doc/Prevayler"/>
-		<copy overwrite="true" todir="${demo.dir}/doc">
+		<copy overwrite="true" todir="${demo.dir}/doc" includeemptydirs="false">
 			<fileset dir="doc">
 				<include name="**"/>
 			</fileset>
