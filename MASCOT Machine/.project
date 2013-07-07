@@ -19,57 +19,63 @@
 		<link>
 			<name>Resources/ACPTemplates</name>
 			<type>2</type>
-			<locationURI>WORKSPACE_LOC/MOJO-Demo/ACPTemplates</locationURI>
+			<locationURI>MOJO_ROOT/MOJO-Demo/ACPTemplates</locationURI>
 		</link>
 		<link>
 			<name>Resources/Images</name>
 			<type>2</type>
-			<locationURI>WORKSPACE_LOC/MOJO-Demo/Images</locationURI>
+			<locationURI>MOJO_ROOT/MOJO-Demo/Images</locationURI>
 		</link>
 		<link>
 			<name>Resources/boot-baseline.macp</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/MOJO-Demo/boot-baseline.macp</locationURI>
+			<locationURI>MOJO_ROOT/MOJO-Demo/boot-baseline.macp</locationURI>
 		</link>
 		<link>
 			<name>Resources/boot.macp</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/MOJO-Demo/boot.macp</locationURI>
+			<locationURI>MOJO_ROOT/MOJO-Demo/boot.macp</locationURI>
 		</link>
 		<link>
 			<name>Resources/monitor-config.macp</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/MOJO-Demo/monitor-config.macp</locationURI>
+			<locationURI>MOJO_ROOT/MOJO-Demo/monitor-config.macp</locationURI>
 		</link>
 		<link>
 			<name>Resources/monitor.macp</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/MOJO-Demo/monitor.macp</locationURI>
+			<locationURI>MOJO_ROOT/MOJO-Demo/monitor.macp</locationURI>
 		</link>
 		<link>
 			<name>Resources/philosophers.macp</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/MOJO-Demo/philosophers.macp</locationURI>
+			<locationURI>MOJO_ROOT/MOJO-Demo/philosophers.macp</locationURI>
 		</link>
 		<link>
 			<name>Resources/smtp-baseline.macp</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/MOJO-Demo/smtp-baseline.macp</locationURI>
+			<locationURI>MOJO_ROOT/MOJO-Demo/smtp-baseline.macp</locationURI>
 		</link>
 		<link>
 			<name>Resources/smtp-config.macp</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/MOJO-Demo/smtp-config.macp</locationURI>
+			<locationURI>MOJO_ROOT/MOJO-Demo/smtp-config.macp</locationURI>
 		</link>
 		<link>
 			<name>Resources/telnet-config.macp</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/MOJO-Demo/telnet-config.macp</locationURI>
+			<locationURI>MOJO_ROOT/MOJO-Demo/telnet-config.macp</locationURI>
 		</link>
 		<link>
 			<name>Resources/timers.macp</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/MOJO-Demo/timers.macp</locationURI>
+			<locationURI>MOJO_ROOT/MOJO-Demo/timers.macp</locationURI>
 		</link>
 	</linkedResources>
+	<variableList>
+		<variable>
+			<name>MOJO_ROOT</name>
+			<value>file:/Users/Allan/Development/MOJO/MOJO%202010</value>
+		</variable>
+	</variableList>
 </projectDescription>
