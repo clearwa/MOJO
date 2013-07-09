@@ -4,6 +4,7 @@
 	<property name="prevayler.jar" value="Jars/prevayler-2.3.jar"/>
 	<property name="target.jar.dir" value="${demo.dir}/lib"/>
 	<property name="source.dir" value="Source"/>
+	<property environment="env"/>
 
 	<target name="init">
 		<tstamp />
@@ -79,9 +80,11 @@
 		<mkdir dir="doc/MOJO_SETs_Editor"/>
 		<exec executable="doxygen">
 			<arg value="MASCOT Machine.doxyfile" />
+			<env key="Path" value="${env.Path};/opt/local/bin" />
 		</exec>
 		<exec executable="doxygen">
 			<arg value="MOJO Sets Editor.doxyfile" />
+			<env key="Path" value="${env.Path};/opt/local/bin" />
 		</exec>
 	</target>
 

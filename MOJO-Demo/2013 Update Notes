@@ -7,4 +7,24 @@ between these parts is MASCOT XML project - this is the only project that is gua
 compile without other components.  The build scripts manage the build of other components.
 
 The other shared components are the Images and ACPTemplates directories and the macp files.  MOJO-Demo
-holds the definative versions of these files and other projects link to them
+holds the definitive versions of these files and other projects link to them.  The project with
+links are:
+	/com.objectforge.mascot.ACPFormEditor
+		MASCOT XML -> MOJO_ROOT/MASCOT XML/MASCOT
+		ACPTemplates -> MOJO_ROOT/MOJO-Demo/ACPTemplates
+		Jars ->MOJO_ROOT/MOJO-Demo/Jars
+	/MASCOT Machine/Resources - all relative to MOJO_ROOT/MOJO-Demo
+		ACPTemplates
+		Images
+		boot-baseline.macp
+		boot.macp
+		monitor-config.macp
+		monitor.macp
+		philosophers.macp
+		smtp-baseline.macp
+		smtp-config.macp
+		telnet-config.macp
+		timers.macp
+	
+		
+	
