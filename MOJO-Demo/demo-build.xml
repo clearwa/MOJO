@@ -80,7 +80,7 @@
 		<mkdir dir="doc/MOJO_SETs_Editor"/>
 		<exec executable="doxygen">
 			<arg value="MASCOT Machine.doxyfile" />
-			<env key="Path" value="${env.Path};/opt/local/bin" />
+			<env key="Path" value="${env.Path}:/opt/local/bin" />
 		</exec>
 		<exec executable="doxygen">
 			<arg value="MOJO Sets Editor.doxyfile" />
