@@ -1,10 +1,10 @@
 /* 
  * $Id$
  * 
- * Copyright © 2005 Sun Microsystems, Inc. All rights
+ * Copyright ï¿½ 2005 Sun Microsystems, Inc. All rights
  * reserved. Use is subject to license terms.
  */
-package org.jdesktop.swingworker;
+package test.org.jdesktop.swingworker;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -17,9 +17,10 @@ import java.util.concurrent.TimeUnit;
 
 import javax.swing.SwingUtilities;
 
+import util.org.jdesktop.swingworker.*;
 import junit.framework.TestCase;
 
-import org.jdesktop.swingworker.SwingWorker.StateValue;
+//import org.jdesktop.swingworker.SwingWorker.StateValue;
 
 public class SwingWorkerTest extends TestCase {
 

@@ -5,7 +5,7 @@
  * reserved. Use is subject to license terms.
  */
 
-package org.jdesktop.swingworker;
+package util.org.jdesktop.swingworker;
 
 import java.util.*;
 import java.lang.reflect.Array;

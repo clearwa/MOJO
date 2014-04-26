@@ -1,11 +1,11 @@
 /* 
  * $Id$
  * 
- * Copyright © 2005 Sun Microsystems, Inc. All rights
+ * Copyright ï¿½ 2005 Sun Microsystems, Inc. All rights
  * reserved. Use is subject to license terms.
  */
 
-package org.jdesktop.swingworker;
+package demo.org.jdesktop.swingworker;
 
 import java.awt.BorderLayout;
 import java.beans.PropertyChangeEvent;
@@ -17,6 +17,8 @@ import javax.swing.JFrame;
 import javax.swing.JProgressBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+
+import util.org.jdesktop.swingworker.*;
 
 public class PrimeNumbersDemo {
     public static void main(String[] args) throws Exception {

@@ -1,11 +1,11 @@
 /* 
  * $Id$
  * 
- * Copyright © 2005 Sun Microsystems, Inc. All rights
+ * Copyright ï¿½ 2005 Sun Microsystems, Inc. All rights
  * reserved. Use is subject to license terms.
  */
 
-package org.jdesktop.swingworker;
+package util.org.jdesktop.swingworker;
 
 import java.beans.PropertyChangeSupport;
 import java.beans.PropertyChangeEvent;
