@@ -14,8 +14,8 @@ links are:
 		ACPTemplates -> MOJO_ROOT/MOJO-Demo/ACPTemplates
 		Jars ->MOJO_ROOT/MOJO-Demo/Jars
 	/MASCOT Machine/Resources - all relative to MOJO_ROOT/MOJO-Demo
-		ACPTemplates
-		Images
+		ACPTemplates/
+		Images/
 		boot-baseline.macp
 		boot.macp
 		monitor-config.macp
