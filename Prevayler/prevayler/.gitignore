@@ -1,8 +1,0 @@
-target/
-.project
-.classpath
-.settings/
-*.ipr
-*.iml
-/tests/Test*/
-/extras/facade/Prevalence/
