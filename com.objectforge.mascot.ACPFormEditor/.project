@@ -31,23 +31,23 @@
 		<link>
 			<name>ACPTemplates</name>
 			<type>2</type>
-			<locationURI>MOJO_ROOT/MOJO-Demo/ACPTemplates</locationURI>
+			<locationURI>MOJO_ROOT/MOJO/MOJO-Demo/ACPTemplates</locationURI>
 		</link>
 		<link>
 			<name>Jars</name>
 			<type>2</type>
-			<locationURI>MOJO_ROOT/MOJO-Demo/Jars</locationURI>
+			<locationURI>MOJO_ROOT/MOJO/MOJO-Demo/Jars</locationURI>
 		</link>
 		<link>
 			<name>MASCOT XML</name>
 			<type>2</type>
-			<locationURI>MOJO_ROOT/MASCOT%20XML/MASCOT</locationURI>
+			<locationURI>MOJO_ROOT/MOJO/MASCOT%20XML/MASCOT</locationURI>
 		</link>
 	</linkedResources>
 	<variableList>
 		<variable>
 			<name>MOJO_ROOT</name>
-			<value>file:/Users/Allan/Development/MOJO/MOJO%202013</value>
+			<value>file:/Users/Allan/git</value>
 		</variable>
 	</variableList>
 </projectDescription>
