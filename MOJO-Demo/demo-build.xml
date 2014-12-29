@@ -78,6 +78,7 @@
 		<delete dir="doc"/>
 		<mkdir dir="doc/MASCOT_Machine"/>
 		<mkdir dir="doc/MOJO_SETs_Editor"/>
+		<!--
 		<exec executable="doxygen">
 			<arg value="MASCOT Machine.doxyfile" />
 			<env key="Path" value="${env.Path}:/opt/local/bin" />
@@ -86,6 +87,7 @@
 			<arg value="MOJO Sets Editor.doxyfile" />
 			<env key="Path" value="${env.Path};/opt/local/bin" />
 		</exec>
+		-->
 	</target>
 
 	<target name="Editordocs" depends="init" description="ACP Editor documentation">
