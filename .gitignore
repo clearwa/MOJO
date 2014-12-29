@@ -1,0 +1,21 @@
+.DS_Store
+#Ignore any editor backup files
+*~
+#Ignore class files in the bin direcory
+*/bin/*
+#Ignore svn directories'
+.svn
+#Workspace metadata
+.metadata
+#The prevayler test directories
+*/pc_testdir/*
+#Ignore generated documentaiton files
+MOJO-Demo/*/doc
+MOJO-Demo/doc
+#Stuff I don't care about
+Que Stuff/*
+#Ignore DS_Store files
+DS_Store
+logs.zip
+
+

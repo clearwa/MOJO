@@ -1,0 +1,368 @@
+<?xml version="1.0" standalone="yes"?>
+
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML/1.4">
+  <XMI.header>
+    <XMI.documentation>
+      <XMI.exporter>ru.novosoft.uml.impl.UMLRepositoryImplXMIWriter</XMI.exporter>
+    </XMI.documentation>
+  </XMI.header>
+  <XMI.content>
+    <UML:Primitive xmi.id="boolean" isRoot="false" isLeaf="true" isAbstract="false" name="boolean" isSpecification="false"></UML:Primitive>
+    <UML:Primitive xmi.id="byte" isRoot="false" isLeaf="true" isAbstract="false" name="byte" isSpecification="false"></UML:Primitive>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples0" isRoot="false" isLeaf="false" isAbstract="false" name="com.objectforge.mascot.prevayler" isSpecification="false"></UML:Package>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples102" isRoot="false" isLeaf="false" isAbstract="false" name="Object[][]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples105" isRoot="false" isLeaf="false" isAbstract="false" name="Object[][]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples107" isRoot="false" isLeaf="false" isAbstract="false" name="Object[][]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples124" isRoot="false" isLeaf="false" isAbstract="false" name="create" isSpecification="false"></UML:Stereotype>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples136" isRoot="false" isLeaf="false" isAbstract="false" name="org.prevayler" isSpecification="false">
+      <UML:Namespace.ownedElement>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples137" isRoot="false" isLeaf="false" isAbstract="false" name="Transaction" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples138"></UML:Interface>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples180" isRoot="false" isLeaf="false" isAbstract="false" name="TransactionWithQuery" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples181"></UML:Interface>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples185" isRoot="false" isLeaf="false" isAbstract="false" name="Query" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples186"></UML:Interface>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples162" isRoot="false" isLeaf="false" isAbstract="false" name="Prevayler" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples163"></UML:Interface>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples138" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples140" isSpecification="false" stereotype="callistoClearwaMASCOTExamples141" client="callistoClearwaMASCOTExamples72" supplier="callistoClearwaMASCOTExamples137"></UML:Dependency>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples141" isRoot="false" isLeaf="false" isAbstract="false" name="access" isSpecification="false"></UML:Stereotype>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples142" isSpecification="false" child="callistoClearwaMASCOTExamples1" parent="callistoClearwaMASCOTExamples25"></UML:Generalization>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples145" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples15" isRoot="false" isLeaf="false" isAbstract="false" name="com.objectforge.mascot.machine.model" isSpecification="false">
+      <UML:Namespace.ownedElement>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples16" isRoot="false" isLeaf="false" isAbstract="false" name="IIDA" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples17"></UML:Interface>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples151" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples154" isSpecification="false" stereotype="callistoClearwaMASCOTExamples156" client="callistoClearwaMASCOTExamples1" supplier="callistoClearwaMASCOTExamples72"></UML:Dependency>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples156" isRoot="false" isLeaf="false" isAbstract="false" name="create" isSpecification="false"></UML:Stereotype>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples159" isRoot="false" isLeaf="false" isAbstract="false" name="com.objectforge.mascot.prevayler" isSpecification="false">
+      <UML:Namespace.ownedElement>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples72" isRoot="false" isLeaf="false" isAbstract="false" generalization="callistoClearwaMASCOTExamples73" name="PersistentList" visibility="public" isSpecification="false" clientDependency="callistoClearwaMASCOTExamples140 callistoClearwaMASCOTExamples190 callistoClearwaMASCOTExamples84 callistoClearwaMASCOTExamples188" stereotype="callistoClearwaMASCOTExamples75" isActive="false">
+          <UML:Namespace.ownedElement>
+            <UML:Attribute xmi.id="callistoClearwaMASCOTExamples76" ownerScope="instance" name="container" visibility="private" isSpecification="false" changeability="changeable" ordering="unordered" type="callistoClearwaMASCOTExamples303">
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="callistoClearwaMASCOTExamples121" language="java" body=" new ArrayList()"></UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples184" ownerScope="classifier" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="statusQuery" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples306" kind="return" type="callistoClearwaMASCOTExamples185" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples112" ownerScope="classifier" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="writeTransaction" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples113" kind="in" type="callistoClearwaMASCOTExamples254" name="payload" isSpecification="false"></UML:Parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples305" kind="return" type="callistoClearwaMASCOTExamples137" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples88" ownerScope="classifier" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="readQuery" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples304" kind="return" type="callistoClearwaMASCOTExamples180" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+          </UML:Namespace.ownedElement>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="callistoClearwaMASCOTExamples74" name="isDefined" isSpecification="false">
+              <UML:TaggedValue.dataValue>true</UML:TaggedValue.dataValue>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples160" isRoot="false" isLeaf="false" isAbstract="false" name="PersistentList" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples1" isRoot="false" isLeaf="false" isAbstract="false" generalization="callistoClearwaMASCOTExamples142" name="PersistentChannel" visibility="public" isSpecification="false" clientDependency="callistoClearwaMASCOTExamples176 callistoClearwaMASCOTExamples154 callistoClearwaMASCOTExamples178 callistoClearwaMASCOTExamples274 callistoClearwaMASCOTExamples285 callistoClearwaMASCOTExamples287 callistoClearwaMASCOTExamples289" isActive="false">
+          <UML:Namespace.ownedElement>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples237" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="PersistentChannel" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples292" kind="return" type="void" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Attribute xmi.id="callistoClearwaMASCOTExamples228" ownerScope="classifier" name="PCSNAPSHOT" visibility="public" isSpecification="false" changeability="frozen" ordering="unordered" type="int">
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="callistoClearwaMASCOTExamples229" language="java" body=" 2"></UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples235" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="getBaseDir" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples301" kind="return" type="callistoClearwaMASCOTExamples241" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Attribute xmi.id="callistoClearwaMASCOTExamples148" ownerScope="instance" name="processQ" visibility="package" isSpecification="false" changeability="changeable" ordering="unordered" type="callistoClearwaMASCOTExamples243">
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="callistoClearwaMASCOTExamples149" language="java" body=" ControlQueue.CountingQFactory()"></UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples11" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="write" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples12" kind="in" type="callistoClearwaMASCOTExamples254" name="contents" isSpecification="false"></UML:Parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples297" kind="return" type="void" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples4" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="read" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples294" kind="return" type="callistoClearwaMASCOTExamples254" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Attribute xmi.id="callistoClearwaMASCOTExamples164" ownerScope="instance" name="baseDir" visibility="protected" isSpecification="false" changeability="changeable" ordering="unordered" type="callistoClearwaMASCOTExamples241">
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="callistoClearwaMASCOTExamples166" language="java" body=" null"></UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples216" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="control" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples217" kind="in" type="int" name="action" isSpecification="false"></UML:Parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples299" kind="return" type="boolean" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Attribute xmi.id="callistoClearwaMASCOTExamples161" ownerScope="instance" name="pSystem" visibility="private" isSpecification="false" changeability="changeable" ordering="unordered" type="callistoClearwaMASCOTExamples162"></UML:Attribute>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples8" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="status" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples296" kind="return" type="callistoClearwaMASCOTExamples295" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Attribute xmi.id="callistoClearwaMASCOTExamples219" ownerScope="classifier" name="PCINIT" visibility="public" isSpecification="false" changeability="frozen" ordering="unordered" type="int">
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="callistoClearwaMASCOTExamples220" language="java" body=" 0"></UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Attribute xmi.id="callistoClearwaMASCOTExamples221" ownerScope="instance" name="readQ" visibility="package" isSpecification="false" changeability="changeable" ordering="unordered" type="callistoClearwaMASCOTExamples245">
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="callistoClearwaMASCOTExamples222" language="java" body=" new ControlQueue()"></UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Attribute xmi.id="callistoClearwaMASCOTExamples246" ownerScope="instance" name="writeQ" visibility="package" isSpecification="false" changeability="changeable" ordering="unordered" type="callistoClearwaMASCOTExamples243">
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="callistoClearwaMASCOTExamples247" language="java" body=" ControlQueue.CountingQFactory()"></UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Attribute xmi.id="callistoClearwaMASCOTExamples248" ownerScope="instance" name="initialized" visibility="private" isSpecification="false" changeability="changeable" ordering="unordered" type="boolean">
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="callistoClearwaMASCOTExamples249" language="java" body=" false"></UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Attribute xmi.id="callistoClearwaMASCOTExamples250" ownerScope="classifier" name="PCCREATE" visibility="public" isSpecification="false" changeability="frozen" ordering="unordered" type="int">
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="callistoClearwaMASCOTExamples251" language="java" body=" 1"></UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Attribute xmi.id="callistoClearwaMASCOTExamples252" ownerScope="instance" name="controlQ" visibility="private" isSpecification="false" changeability="changeable" ordering="unordered" type="callistoClearwaMASCOTExamples245">
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="callistoClearwaMASCOTExamples253" language="java" body=" new ControlQueue()"></UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples262" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="checkProcess" visibility="private" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples293" kind="return" type="void" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples264" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="pCreate" visibility="private" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples265" kind="in" type="callistoClearwaMASCOTExamples241" name="directory" isSpecification="false"></UML:Parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples298" kind="return" type="callistoClearwaMASCOTExamples162" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples267" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="control" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples268" kind="in" type="int" name="action" isSpecification="false"></UML:Parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples269" kind="in" type="callistoClearwaMASCOTExamples241" name="directory" isSpecification="false"></UML:Parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples300" kind="return" type="boolean" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+          </UML:Namespace.ownedElement>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="callistoClearwaMASCOTExamples14" name="isDefined" isSpecification="false">
+              <UML:TaggedValue.dataValue>true</UML:TaggedValue.dataValue>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples163" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples168" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples17" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples176" isSpecification="false" stereotype="callistoClearwaMASCOTExamples177" client="callistoClearwaMASCOTExamples1" supplier="callistoClearwaMASCOTExamples162"></UML:Dependency>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples177" isRoot="false" isLeaf="false" isAbstract="false" name="access" isSpecification="false"></UML:Stereotype>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples178" isSpecification="false" stereotype="callistoClearwaMASCOTExamples179" client="callistoClearwaMASCOTExamples1" supplier="callistoClearwaMASCOTExamples165"></UML:Dependency>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples179" isRoot="false" isLeaf="false" isAbstract="false" name="access" isSpecification="false"></UML:Stereotype>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples181" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples186" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples188" isSpecification="false" stereotype="callistoClearwaMASCOTExamples189" client="callistoClearwaMASCOTExamples72" supplier="callistoClearwaMASCOTExamples185"></UML:Dependency>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples189" isRoot="false" isLeaf="false" isAbstract="false" name="access" isSpecification="false"></UML:Stereotype>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples19" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples190" isSpecification="false" stereotype="callistoClearwaMASCOTExamples191" client="callistoClearwaMASCOTExamples72" supplier="callistoClearwaMASCOTExamples180"></UML:Dependency>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples191" isRoot="false" isLeaf="false" isAbstract="false" name="access" isSpecification="false"></UML:Stereotype>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples193" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples197" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples20" isRoot="false" isLeaf="false" isAbstract="false" name="com.objectforge.mascot.machine.internal" isSpecification="false">
+      <UML:Namespace.ownedElement>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples23" isRoot="false" isLeaf="false" isAbstract="false" name="IEIAccess" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples24"></UML:Interface>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples32" isRoot="false" isLeaf="false" isAbstract="false" name="EntityInstance" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples33"></UML:Interface>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples21" isRoot="false" isLeaf="false" isAbstract="false" name="MascotAlloc" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples22"></UML:Interface>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples201" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples205" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples209" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples213" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples22" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples224" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples231" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples24" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples240" isRoot="false" isLeaf="false" isAbstract="false" name="java.lang" isSpecification="false">
+      <UML:Namespace.ownedElement>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples241" isRoot="false" isLeaf="true" isAbstract="false" name="String" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples254" isRoot="false" isLeaf="false" isAbstract="false" name="Object" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples271" isRoot="false" isLeaf="false" isAbstract="false" name="Exception" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples279" isRoot="false" isLeaf="false" isAbstract="true" name="CharSequence" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples280"></UML:Interface>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples281" isRoot="false" isLeaf="true" isAbstract="false" generalization="callistoClearwaMASCOTExamples282 callistoClearwaMASCOTExamples283 callistoClearwaMASCOTExamples284" name="StringBuffer" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples242" isRoot="false" isLeaf="false" isAbstract="false" name="com.objectforge.mascot.machine.scheduler" isSpecification="false">
+      <UML:Namespace.ownedElement>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples243" isRoot="false" isLeaf="false" isAbstract="false" name="CountingQI" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples244"></UML:Interface>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples245" isRoot="false" isLeaf="false" isAbstract="false" name="ControlQueue" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples244" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples256" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples26" isRoot="false" isLeaf="false" isAbstract="false" name="com.objectforge.mascot.machine.idas" isSpecification="false">
+      <UML:Namespace.ownedElement>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples25" isRoot="false" isLeaf="false" isAbstract="true" generalization="callistoClearwaMASCOTExamples30 callistoClearwaMASCOTExamples29 callistoClearwaMASCOTExamples28 callistoClearwaMASCOTExamples27" name="AbstractIDA" visibility="public" isSpecification="false" clientDependency="callistoClearwaMASCOTExamples67 callistoClearwaMASCOTExamples56" isActive="false">
+          <UML:Namespace.ownedElement>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples36" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="verify" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples37" kind="return" type="boolean" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples38" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="read" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples39" kind="return" type="callistoClearwaMASCOTExamples6" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples52" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="setEInstance" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples53" kind="in" type="callistoClearwaMASCOTExamples32" name="anInstance" isSpecification="false"></UML:Parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples54" kind="return" type="void" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples34" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="AbstractIDA" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples35" kind="return" type="void" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples48" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="finalize" visibility="protected" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples49" kind="return" type="void" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples50" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="getEInstance" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples51" kind="return" type="callistoClearwaMASCOTExamples32" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Attribute xmi.id="callistoClearwaMASCOTExamples31" ownerScope="instance" name="eInstance" visibility="private" isSpecification="false" changeability="changeable" ordering="unordered" type="callistoClearwaMASCOTExamples32"></UML:Attribute>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples40" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="write" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples41" kind="in" type="callistoClearwaMASCOTExamples6" name="contents" isSpecification="false"></UML:Parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples42" kind="return" type="void" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples46" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="clone" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples47" kind="return" type="callistoClearwaMASCOTExamples6" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="callistoClearwaMASCOTExamples43" ownerScope="instance" concurrency="concurrent" isRoot="false" isLeaf="false" isAbstract="false" isQuery="false" name="status" visibility="public" isSpecification="false">
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="callistoClearwaMASCOTExamples45" kind="return" type="callistoClearwaMASCOTExamples44" isSpecification="false"></UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+          </UML:Namespace.ownedElement>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="callistoClearwaMASCOTExamples55" name="isDefined" isSpecification="false">
+              <UML:TaggedValue.dataValue>true</UML:TaggedValue.dataValue>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples272" isRoot="false" isLeaf="false" isAbstract="false" generalization="callistoClearwaMASCOTExamples273" name="IDAException" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples27" isSpecification="false" child="callistoClearwaMASCOTExamples25" parent="callistoClearwaMASCOTExamples16"></UML:Generalization>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples273" isSpecification="false" child="callistoClearwaMASCOTExamples272" parent="callistoClearwaMASCOTExamples271"></UML:Generalization>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples274" isSpecification="false" stereotype="callistoClearwaMASCOTExamples275" client="callistoClearwaMASCOTExamples1" supplier="callistoClearwaMASCOTExamples272"></UML:Dependency>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples275" isRoot="false" isLeaf="false" isAbstract="false" name="create" isSpecification="false"></UML:Stereotype>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples276" isRoot="false" isLeaf="false" isAbstract="false" name="java.io" isSpecification="false">
+      <UML:Namespace.ownedElement>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples277" isRoot="false" isLeaf="false" isAbstract="true" name="Serializable" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples278"></UML:Interface>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples278" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples28" isSpecification="false" child="callistoClearwaMASCOTExamples25" parent="callistoClearwaMASCOTExamples18"></UML:Generalization>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples280" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples282" isSpecification="false" child="callistoClearwaMASCOTExamples281" parent="callistoClearwaMASCOTExamples254"></UML:Generalization>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples283" isSpecification="false" child="callistoClearwaMASCOTExamples281" parent="callistoClearwaMASCOTExamples277"></UML:Generalization>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples284" isSpecification="false" child="callistoClearwaMASCOTExamples281" parent="callistoClearwaMASCOTExamples279"></UML:Generalization>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples285" isSpecification="false" stereotype="callistoClearwaMASCOTExamples286" client="callistoClearwaMASCOTExamples1" supplier="callistoClearwaMASCOTExamples281"></UML:Dependency>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples286" isRoot="false" isLeaf="false" isAbstract="false" name="create" isSpecification="false"></UML:Stereotype>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples287" isSpecification="false" stereotype="callistoClearwaMASCOTExamples288" client="callistoClearwaMASCOTExamples1" supplier="callistoClearwaMASCOTExamples243"></UML:Dependency>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples288" isRoot="false" isLeaf="false" isAbstract="false" name="access" isSpecification="false"></UML:Stereotype>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples289" isSpecification="false" stereotype="callistoClearwaMASCOTExamples290 callistoClearwaMASCOTExamples291" client="callistoClearwaMASCOTExamples1" supplier="callistoClearwaMASCOTExamples245"></UML:Dependency>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples29" isSpecification="false" child="callistoClearwaMASCOTExamples25" parent="callistoClearwaMASCOTExamples21"></UML:Generalization>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples290" isRoot="false" isLeaf="false" isAbstract="false" name="access" isSpecification="false"></UML:Stereotype>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples291" isRoot="false" isLeaf="false" isAbstract="false" name="create" isSpecification="false"></UML:Stereotype>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples295" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples30" isSpecification="false" child="callistoClearwaMASCOTExamples25" parent="callistoClearwaMASCOTExamples23"></UML:Generalization>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples302" isRoot="false" isLeaf="false" isAbstract="false" name="java.util" isSpecification="false">
+      <UML:Namespace.ownedElement>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples303" isRoot="false" isLeaf="false" isAbstract="false" name="ArrayList" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples33" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples44" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples5" isRoot="false" isLeaf="false" isAbstract="false" name="java.lang" isSpecification="false">
+      <UML:Namespace.ownedElement>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples92" isRoot="false" isLeaf="false" isAbstract="false" generalization="callistoClearwaMASCOTExamples93" name="Error" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples6" isRoot="false" isLeaf="false" isAbstract="false" name="Object" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples63" isRoot="false" isLeaf="true" isAbstract="false" generalization="callistoClearwaMASCOTExamples65 callistoClearwaMASCOTExamples66 callistoClearwaMASCOTExamples64" name="StringBuffer" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples18" isRoot="false" isLeaf="false" isAbstract="true" name="Cloneable" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples19"></UML:Interface>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples165" isRoot="false" isLeaf="true" isAbstract="false" name="String" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples61" isRoot="false" isLeaf="false" isAbstract="true" name="CharSequence" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples62"></UML:Interface>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples91" isRoot="false" isLeaf="false" isAbstract="false" name="Throwable" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples56" isSpecification="false" stereotype="callistoClearwaMASCOTExamples57" client="callistoClearwaMASCOTExamples25" supplier="callistoClearwaMASCOTExamples32"></UML:Dependency>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples57" isRoot="false" isLeaf="false" isAbstract="false" name="access" isSpecification="false"></UML:Stereotype>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples58" isRoot="false" isLeaf="false" isAbstract="false" name="java.io" isSpecification="false">
+      <UML:Namespace.ownedElement>
+        <UML:Interface xmi.id="callistoClearwaMASCOTExamples59" isRoot="false" isLeaf="false" isAbstract="true" name="Serializable" visibility="public" isSpecification="false" stereotype="callistoClearwaMASCOTExamples60"></UML:Interface>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples60" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples62" isRoot="false" isLeaf="false" isAbstract="false" name="interface" isSpecification="false"></UML:Stereotype>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples64" isSpecification="false" child="callistoClearwaMASCOTExamples63" parent="callistoClearwaMASCOTExamples6"></UML:Generalization>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples65" isSpecification="false" child="callistoClearwaMASCOTExamples63" parent="callistoClearwaMASCOTExamples59"></UML:Generalization>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples66" isSpecification="false" child="callistoClearwaMASCOTExamples63" parent="callistoClearwaMASCOTExamples61"></UML:Generalization>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples67" isSpecification="false" stereotype="callistoClearwaMASCOTExamples68" client="callistoClearwaMASCOTExamples25" supplier="callistoClearwaMASCOTExamples63"></UML:Dependency>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples68" isRoot="false" isLeaf="false" isAbstract="false" name="create" isSpecification="false"></UML:Stereotype>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples73" isSpecification="false" child="callistoClearwaMASCOTExamples72" parent="callistoClearwaMASCOTExamples59"></UML:Generalization>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples75" isRoot="false" isLeaf="false" isAbstract="false" name="Business Object" isSpecification="false"></UML:Stereotype>
+    <UML:Package xmi.id="callistoClearwaMASCOTExamples77" isRoot="false" isLeaf="false" isAbstract="false" name="java.util" isSpecification="false">
+      <UML:Namespace.ownedElement>
+        <UML:Class xmi.id="callistoClearwaMASCOTExamples78" isRoot="false" isLeaf="false" isAbstract="false" name="ArrayList" visibility="public" isSpecification="false" isActive="false"></UML:Class>
+      </UML:Namespace.ownedElement>
+    </UML:Package>
+    <UML:Dependency xmi.id="callistoClearwaMASCOTExamples84" isSpecification="false" stereotype="callistoClearwaMASCOTExamples124 callistoClearwaMASCOTExamples85" client="callistoClearwaMASCOTExamples72" supplier="callistoClearwaMASCOTExamples78"></UML:Dependency>
+    <UML:Stereotype xmi.id="callistoClearwaMASCOTExamples85" isRoot="false" isLeaf="false" isAbstract="false" name="access" isSpecification="false"></UML:Stereotype>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples89" isRoot="false" isLeaf="false" isAbstract="false" name="Object[][]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples9" isRoot="false" isLeaf="false" isAbstract="false" name="Object[]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Generalization xmi.id="callistoClearwaMASCOTExamples93" isSpecification="false" child="callistoClearwaMASCOTExamples92" parent="callistoClearwaMASCOTExamples91"></UML:Generalization>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples96" isRoot="false" isLeaf="false" isAbstract="false" name="Object[][]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Class xmi.id="callistoClearwaMASCOTExamples98" isRoot="false" isLeaf="false" isAbstract="false" name="Object[][]" isSpecification="false" isActive="false"></UML:Class>
+    <UML:Primitive xmi.id="char" isRoot="false" isLeaf="true" isAbstract="false" name="char" isSpecification="false"></UML:Primitive>
+    <UML:Primitive xmi.id="double" isRoot="false" isLeaf="true" isAbstract="false" name="double" isSpecification="false"></UML:Primitive>
+    <UML:Primitive xmi.id="float" isRoot="false" isLeaf="true" isAbstract="false" name="float" isSpecification="false"></UML:Primitive>
+    <UML:Primitive xmi.id="int" isRoot="false" isLeaf="true" isAbstract="false" name="int" isSpecification="false"></UML:Primitive>
+    <UML:Primitive xmi.id="long" isRoot="false" isLeaf="true" isAbstract="false" name="long" isSpecification="false"></UML:Primitive>
+    <UML:Primitive xmi.id="short" isRoot="false" isLeaf="true" isAbstract="false" name="short" isSpecification="false"></UML:Primitive>
+    <UML:Primitive xmi.id="void" isRoot="false" isLeaf="true" isAbstract="false" name="void" isSpecification="false"></UML:Primitive>
+  </XMI.content>
+</XMI>
+

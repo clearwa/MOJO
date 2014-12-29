@@ -1,0 +1,8 @@
+<!--
+	To be inserted on the target gather.bin.parts.
+-->
+		<copy todir="${destination.temp.folder}/${full.name}">
+			<fileset dir="${basedir}" includes="icons/,plugin.xml"/>
+			<fileset dir="../MOJO-Demo" includes="plugin.properties"/>
+			<fileset dir="../MOJO-Demo/ACPTemplates" includes="*"/>
+		</copy>

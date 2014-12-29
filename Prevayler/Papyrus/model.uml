@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_0rDFgMx_EeOXjYZd7Shvcw" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_0rDFgcx_EeOXjYZd7Shvcw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_0tGT8Mx_EeOXjYZd7Shvcw" name="Activity1"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Rjw9QMyAEeOXjYZd7Shvcw" name="Interface1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vW4AsMyAEeOXjYZd7Shvcw" name="Class1"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_elvwYMyBEeOXjYZd7Shvcw" name="DataType1"/>
+  <packagedElement xmi:type="uml:InformationItem" xmi:id="_fx72sMyBEeOXjYZd7Shvcw" clientDependency="_pOg-gMyEEeOXjYZd7Shvcw _tAur4MyEEeOXjYZd7Shvcw" name="InformationItem1"/>
+  <packagedElement xmi:type="uml:Constraint" xmi:id="_keiIsMyBEeOXjYZd7Shvcw" name="Constraint1">
+    <specification xmi:type="uml:StringExpression" xmi:id="_w8my8MyBEeOXjYZd7Shvcw" name="tt" symbol="xx"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_R776wMyCEeOXjYZd7Shvcw" name="Component1"/>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_09x3cMyDEeOXjYZd7Shvcw" name="Tiester" classifier="_vW4AsMyAEeOXjYZd7Shvcw">
+    <slot xmi:type="uml:Slot" xmi:id="_GiENkMyEEeOXjYZd7Shvcw"/>
+    <slot xmi:type="uml:Slot" xmi:id="_K_AS8MyEEeOXjYZd7Shvcw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_NVBvIMyEEeOXjYZd7Shvcw" name="Signal1"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_pOg-gMyEEeOXjYZd7Shvcw" name="Usage1" client="_fx72sMyBEeOXjYZd7Shvcw" supplier="_R776wMyCEeOXjYZd7Shvcw"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_tAur4MyEEeOXjYZd7Shvcw" name="Realization1" client="_fx72sMyBEeOXjYZd7Shvcw" supplier="_09x3cMyDEeOXjYZd7Shvcw"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_3S43MMyPEeOBNbQ5Jn_C0A" name="Interaction1">
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_guJpgMyQEeOBNbQ5Jn_C0A" name="MessageSend" covered="_EJhycMyQEeOBNbQ5Jn_C0A" message="_guFYEMyQEeOBNbQ5Jn_C0A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_guJpgcyQEeOBNbQ5Jn_C0A" name="MessageRecv" covered="_TiYy0MyQEeOBNbQ5Jn_C0A" message="_guFYEMyQEeOBNbQ5Jn_C0A"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_EJhycMyQEeOBNbQ5Jn_C0A" name="Line 1" coveredBy="_guJpgMyQEeOBNbQ5Jn_C0A"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_TiYy0MyQEeOBNbQ5Jn_C0A" name="Lifeline" coveredBy="_guJpgcyQEeOBNbQ5Jn_C0A"/>
+    <message xmi:type="uml:Message" xmi:id="_guFYEMyQEeOBNbQ5Jn_C0A" name="1:Message" messageSort="asynchCall" receiveEvent="_guJpgcyQEeOBNbQ5Jn_C0A" sendEvent="_guJpgMyQEeOBNbQ5Jn_C0A"/>
+  </packagedElement>
+</uml:Model>

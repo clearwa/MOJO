@@ -1,0 +1,186 @@
+<project name="MOJO Demonstration" basedir="." default="Delivery" xmlns:doxygen="antlib:org.doxygen.tools">
+
+	<property name="demo.dir" value="MOJO 2010"/>
+	<property name="prevayler.jar" value="Jars/prevayler-2.3.jar"/>
+	<property name="target.jar.dir" value="${demo.dir}/lib"/>
+	<property name="source.dir" value="Source"/>
+	<property environment="env"/>
+
+	<target name="init">
+		<tstamp />
+	</target>
+
+	<!-- =================================
+          target: MASCOTjar
+         ================================= -->
+	<target name="MASCOTjar" depends="init" description="Build the Mascot 2010 jar">
+		<jar compress="true" update="true" destfile="MASCOT.jar">
+			<fileset dir="../MASCOT XML/bin">
+				<include name="**/*.class" />
+			</fileset>
+
+			<fileset dir="../MASCOT Examples/bin">
+				<include name="**/*.class" />
+			</fileset>
+
+			<fileset dir="../MASCOT Machine/bin">
+				<include name="**/*.class" />
+			</fileset>
+			<fileset dir=".">
+				<include name="ACPTemplates/**/*" />
+				<include name="Images/**/*" />
+			</fileset>
+
+		</jar>
+	</target>
+
+	<target name="MOJOdemo" depends="MASCOTjar" description="Build the demo jar">
+		<jar compress="true" update="true" destfile="MOJOdemo.jar" manifest="demo.manifest">
+			<fileset dir=".">
+				<include name="*.macp"/>
+				<include name="mascot_machine.properties"/>
+			</fileset>
+			<fileset dir="./Jars">
+				<include name="*"/>
+			</fileset>
+		</jar>
+	</target>
+
+	<target name="MOJOdocs" depends="init" description="Build MOJO documentation">
+		<delete dir="doc"/>
+		<mkdir dir="doc"/>
+		<javadoc destdir="${basedir}/doc/MOJO"
+		           author="true"
+		           version="true"
+		           use="true"
+		           windowtitle="Mascot 2010 API"
+				   classpath = "MASCOT.jar:${prevayler.jar}"
+					useexternalfile = "yes">
+
+			<fileset dir="../MASCOT Examples/src" defaultexcludes="yes">
+				<include name="Implementation/**"/>
+				<exclude name="**/*.uud"/>
+				<exclude name="**/*.ucd"/>
+				<exclude name="**/*.jpage"/>
+			</fileset>
+			<fileset dir="../MASCOT Machine" defaultexcludes="yes">
+				<include name="Core/**"/>
+				<include name="IDAs/**"/>
+				<include name="XML/**"/>
+			</fileset>
+			<fileset dir="../MASCOT XML/" defaultexcludes="yes">
+				<include name="MASCOT/**"/>
+			</fileset>
+		</javadoc>
+	</target>
+
+	<target name="Doxygen" depends="init" >
+		<delete dir="doc"/>
+		<mkdir dir="doc/MASCOT_Machine"/>
+		<mkdir dir="doc/MOJO_SETs_Editor"/>
+		<!--
+		<exec executable="doxygen">
+			<arg value="MASCOT Machine.doxyfile" />
+			<env key="Path" value="${env.Path}:/opt/local/bin" />
+		</exec>
+		<exec executable="doxygen">
+			<arg value="MOJO Sets Editor.doxyfile" />
+			<env key="Path" value="${env.Path};/opt/local/bin" />
+		</exec>
+		-->
+	</target>
+
+	<target name="Editordocs" depends="init" description="ACP Editor documentation">
+		<javadoc destdir="doc/ACP Editor"
+		           author="true"
+		           version="true"
+		           use="true"
+		           windowtitle="ACP Editor API"
+				   classpath = "MASCOT.jar:${prevayler.jar}"
+					useexternalfile = "yes">
+			<fileset dir="../com.objectforge.mascot.ACPFormEditor" defaultexcludes="yes">
+				<include name="ACPEditor/**"/>
+				<exclude name="ACPEditor/swing2swt/**"/>
+				<exclude name="ACPEditor/**/images/**"/>
+				<exclude name="ACPEditor//**/*.properties"/>
+			</fileset>
+		</javadoc>
+	</target>
+
+	<target name="MOJOzip" depends="init" description="Create the source zip">
+		<zip destfile="MOJOsrc.zip">
+			<zipfileset dir="../MASCOT Examples/src/Implementation">
+				<include name="com/objectforge/mascot/**"/>
+			</zipfileset>
+			<zipfileset dir="../MASCOT Machine" defaultexcludes="yes">
+				<include name="Core/**"/>
+				<include name="IDAs/**"/>
+				<include name="XML/**"/>
+			</zipfileset>
+			<zipfileset dir="../MASCOT XML/" defaultexcludes="yes">
+				<include name="MASCOT/**"/>
+			</zipfileset>
+			<zipfileset dir="../com.objectforge.mascot.ACPFormEditor/" defaultexcludes="yes">
+				<include name="ACPEditor/**"/>
+			</zipfileset>
+			<zipfileset dir="../com.objectforge.mascot.ACPFormEditor/" defaultexcludes="yes">
+				<include name="ACPEditor/**"/>
+			</zipfileset>
+			<zipfileset dir=".">
+				<include name="*.macp,mascot_machine.properties"/>
+			</zipfileset>
+		</zip>
+	</target>
+
+	<target name="clean" description="Clean out the generated files">
+		<delete dir="doc"/>
+		<delete file="MASCOT.jar"/>
+		<delete file="MOJOsrc.zip"/>
+		<delete file="MOJOdemo.jar"/>
+	</target>
+
+	<target name="Delivery" depends="MOJOzip,MOJOdemo,Doxygen" description="Copy to the delivery directory">
+		<delete dir="${demo.dir}"/>
+		<mkdir dir="${demo.dir}"/>
+		<copy overwrite="true" file="MASCOT.jar" todir="${demo.dir}" />
+		<copy overwrite="true" todir="${target.jar.dir}">
+			<fileset dir=".">
+				<include name="MASCOT.jar"/>
+			</fileset>
+			<fileset dir="Source/prevayler-2.3/lib">
+				<include name="*.jar"/>
+			</fileset>
+		</copy>
+		<copy overwrite="true" file="MOJOdemo.jar" todir="${demo.dir}" />
+		<copy overwrite="true" file="${prevayler.jar}" todir="${target.jar.dir}" />
+		<copy overwrite="true" file="MOJOsrc.zip" todir="${demo.dir}" />
+		<delete dir="${demo.dir}/doc"/>
+		<mkdir dir="${demo.dir}/doc/Prevayler"/>
+		<copy overwrite="true" todir="${demo.dir}/doc" includeemptydirs="false">
+			<fileset dir="doc">
+				<include name="**"/>
+			</fileset>
+		</copy>
+		<copy overwrite="true" todir="${demo.dir}/doc/Prevayler">
+			<fileset dir="${source.dir}/prevayler-2.3/docs">
+				<include name="**"/>
+			</fileset>
+		</copy>
+		<copy overwrite="true" todir="${demo.dir}/2010 ACP Editor Update">
+			<fileset dir="../ACP Editor Update">
+				<include name="**"/>
+				<exclude name=".*"/>
+				<exclude name="bin"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="MOJO2010zip" depends="Delivery">
+		<zip destfile="MOJO_2010.zip">
+			<zipfileset dir="${demo.dir}" defaultexcludes="yes">
+				<include name="**"/>
+			</zipfileset>
+		</zip>
+	</target>
+
+</project>

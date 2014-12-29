@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SETS>
+	<Include Filename="boot-baseline.macp"/>
+	<Include Filename="telnet-config.macp"/>
+	<!--    
+	<Include Filename="monitor.macp"/>
+	<Include Filename="monitor-config.macp"/>
+	<Include Filename="smtp-relay.macp"/>
+	<Include Filename="smtp-config.macp"/>
+    -->
+</SETS>

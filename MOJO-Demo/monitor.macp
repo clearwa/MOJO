@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SETS>
+	<SET name="Monitor">
+		<Activity root="com.objectforge.mascot.IDA.monitor.IncarnateMonitor" name="incarnate-monitor"/>
+		<Activity root="com.objectforge.mascot.IDA.monitor.MonitorDevice" name="reader"/>
+		<Device device-name="monitor-device" handler="system-monitor-handler"/>
+		<IDA name="monitor-1110" imp="monitor-device" type="device"/>
+		<IDA name="monitor-serial" imp="com.objectforge.mascot.IDA.monitor.MonitorSerialChannel" type="channel"/>
+		<Subsystem name="system-monitor" type="subsystem">
+			<deviceIDA-ref name="monitor-1110"/>
+			<activity-ref name="incarnate-monitor"/>
+		</Subsystem>
+		<Subsystem name="system-monitor-handler" type="handler">
+			<localIDA-ref name="reader" reference="monitor-serial"/>
+			<localIDA-ref name="writer" reference="serial-channel"/>
+			<activity-ref name="reader"/>
+		</Subsystem>
+		<Activity root="com.objectforge.arcitech.smtp.SMTPLogger" name="Monitor Logger"/>
+		<Subsystem name="Monitor Logger" type="subsystem" close_on_empty="true">
+			<activity-ref name="Monitor Logger"/>
+			<deviceIDA-ref name="monitor-1110"/>
+			<globalIDA-ref name="logger-port"/>
+		</Subsystem>
+		<Subsystem name="global" type="global">
+			<localIDA-ref reference="serial-channel" name="logger-port"/>
+			<subsys-ref name="Monitor Logger"/>
+		</Subsystem>
+	</SET>
+</SETS>

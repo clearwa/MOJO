@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+    	<extension
+	     point="org.eclipse.ui.editors">
+	  <editor
+	        class="com.objectforge.mascot.ACPFormEditor.internal.ACPFormEditor"
+	        icon="icons/MOJO_16.gif"
+	        default="true"
+	        contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+	        name="%editor.name"
+	        id="com.objectforge.mascot.ACPFormEditor"
+	        extensions="macp"/>
+	</extension>
+	<extension
+	     point="org.eclipse.ui.newWizards">
+	  <category
+	        name="%category.name"
+	        id="com.objectforge.mascot.ACPFormEditor.internal"/>
+	  <wizard
+	        category="com.objectforge.mascot.ACPFormEditor.internal"
+	        class="com.objectforge.mascot.ACPFormEditor.internal.wizards.AcpSETWizard"
+	        descriptionImage="icons/Dining.gif"
+	        hasPages="true"
+	        icon="icons/MOJO_16.gif"
+	        id="com.objectforge.mascot.ACPFormEditor.internal.wizards.SETDocumentWizard"
+	        name="%wizard.name"
+	        project="false"/>
+	</extension>
+
+</plugin>

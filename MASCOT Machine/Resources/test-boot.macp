@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The template for a new acp SET file -->
+<SETS>
+	<SET name="Test" >
+		<IDA name="serial-channel" imp="com.objectforge.mascot.IDA.SerialChannel" type="channel"/>
+		<IDA name="telnet-serial-channel" imp="com.objectforge.mascot.IDA.telnet.TelnetSerialChannel" type="channel"/>
+		<Device device-name="smtp-device" handler="smtp-handler"/>
+		<Activity root="com.objectforge.arcitech.smtp.SMTPServerDevice" name="SMTPHandler"/>
+		<IDA name="token-pool" imp="com.objectforge.mascot.IDA.TokenPool" type="pool"/>
+		<Subsystem name="smtp-handler" type="handler">
+			<localIDA-ref name="reader" reference="serial-channel"/>
+			<localIDA-ref name="writer" reference="serial-channel"/>
+			<activity-ref name="SMTPHandler">
+				<arguments>
+					<Integer index="2" value="50"/>
+				</arguments>
+			</activity-ref>
+			<localIDA-ref name="token-pool"/>
+		</Subsystem>
+	</SET>
+</SETS>
+
