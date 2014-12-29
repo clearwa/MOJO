@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.objectforge.mascot.ACPFormEditor"
+      label="The Mascot 2010 ACP Editor"
+      version="2.1.3"
+      provider-name="Object Forge Ltd."
+      plugin="com.objectforge.mascot.ACPFormEditor">
+
+   <description url="http://www.object-forge.com/eclipse/">
+      The ACP Editor Plugin is a stuctured editor for the creation
+and mainteneance of MASCOT 2010 SETs documents (*.macp files).
+SETs are XML documents that capture the structure of MASCOT 2010
+systems as expressed in ACP diagrams; MASCOT Mahcines read them
+as configuration files.  For more information regarding MASCOT
+2010 and MOJO (a refernece implementaion of a MASCOT 2010 Machine
+in Java) please refer to the URL below.
+   </description>
+
+   <copyright>
+      Object Forge Ltd., 2002 - 2010
+   </copyright>
+
+   <license>
+      This is a license with some more stuff
+   </license>
+
+   <url>
+      <discovery label="Object Forge update site" url="http://www.object-forge.com/eclipse/update"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.forms"/>
+   </requires>
+
+   <plugin
+         id="com.objectforge.mascot.ACPFormEditor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>
