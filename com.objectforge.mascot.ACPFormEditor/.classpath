@@ -8,6 +8,5 @@
 	<classpathentry kind="src" path="MASCOT XML"/>
 	<classpathentry kind="src" path="ACPTemplates"/>
 	<classpathentry kind="src" path="icons"/>
-	<classpathentry kind="src" path="Jars"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
