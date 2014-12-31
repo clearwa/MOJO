@@ -39,7 +39,7 @@
 			<locationURI>MOJO_ROOT/clearwa/MOJO/MOJO-Demo/Jars</locationURI>
 		</link>
 		<link>
-			<name>MASCOT</name>
+			<name>MASCOT XML</name>
 			<type>2</type>
 			<locationURI>MOJO_ROOT/clearwa/MOJO/MASCOT%20XML/MASCOT</locationURI>
 		</link>
