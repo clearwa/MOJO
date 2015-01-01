@@ -31,17 +31,17 @@
 		<link>
 			<name>ACPTemplates</name>
 			<type>2</type>
-			<locationURI>MOJO_ROOT/clearwa/MOJO/MOJO-Demo/ACPTemplates</locationURI>
+			<locationURI>MOJO_ROOT/MOJO_Recovery/MOJO-Demo/ACPTemplates</locationURI>
 		</link>
 		<link>
 			<name>Jars</name>
 			<type>2</type>
-			<locationURI>MOJO_ROOT/clearwa/MOJO/MOJO-Demo/Jars</locationURI>
+			<locationURI>MOJO_ROOT/MOJO_Recovery/MOJO-Demo/Jars</locationURI>
 		</link>
 		<link>
 			<name>MASCOT XML</name>
 			<type>2</type>
-			<locationURI>MOJO_ROOT/clearwa/MOJO/MASCOT%20XML/MASCOT</locationURI>
+			<locationURI>MOJO_ROOT/MOJO_Recovery/MASCOT%20XML/MASCOT</locationURI>
 		</link>
 	</linkedResources>
 	<variableList>
