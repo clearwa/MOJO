@@ -6,6 +6,7 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/MASCOT Machine"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/MASCOT XML"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
-	<classpathentry kind="lib" path="/MOJO-Demo/Jars/prevayler-2.3.jar"/>
+	<classpathentry kind="lib" path="/MOJO-Demo/Jars/prevayler-2.7.jar"/>
+	<classpathentry kind="lib" path="/MOJO-Demo/Jars/prevayler-factory-2.7-SNAPSHOT.jar" sourcepath="/Prevayler-27/factory/src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

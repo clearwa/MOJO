@@ -1,7 +1,8 @@
 <project name="MOJO Demonstration" basedir="." default="Delivery" xmlns:doxygen="antlib:org.doxygen.tools">
 
-	<property name="demo.dir" value="MOJO 2010"/>
-	<property name="prevayler.jar" value="Jars/prevayler-2.3.jar"/>
+	<property name="demo.dir" value="MOJO 2015"/>
+	<property name="prevayler.jar" value="Jars/prevayler-2.7.jar"/>
+	<property name="foundation.jar" value="Jars/prevayler-factory-2.7-SNAPSHOT.jar"/>
 	<property name="target.jar.dir" value="${demo.dir}/lib"/>
 	<property name="source.dir" value="Source"/>
 	<property environment="env"/>
@@ -13,7 +14,7 @@
 	<!-- =================================
           target: MASCOTjar
          ================================= -->
-	<target name="MASCOTjar" depends="init" description="Build the Mascot 2010 jar">
+	<target name="MASCOTjar" depends="init" description="Build the Mascot 2015 jar">
 		<jar compress="true" update="true" destfile="MASCOT.jar">
 			<fileset dir="../MASCOT XML/bin">
 				<include name="**/*.class" />
@@ -53,8 +54,8 @@
 		           author="true"
 		           version="true"
 		           use="true"
-		           windowtitle="Mascot 2010 API"
-				   classpath = "MASCOT.jar:${prevayler.jar}"
+		           windowtitle="Mascot 2015 API"
+				   classpath = "MASCOT.jar:${prevayler.jar}:{foundation.jar}"
 					useexternalfile = "yes">
 
 			<fileset dir="../MASCOT Examples/src" defaultexcludes="yes">
@@ -78,7 +79,6 @@
 		<delete dir="doc"/>
 		<mkdir dir="doc/MASCOT_Machine"/>
 		<mkdir dir="doc/MOJO_SETs_Editor"/>
-		<!--
 		<exec executable="doxygen">
 			<arg value="MASCOT Machine.doxyfile" />
 			<env key="Path" value="${env.Path}:/opt/local/bin" />
@@ -87,7 +87,6 @@
 			<arg value="MOJO Sets Editor.doxyfile" />
 			<env key="Path" value="${env.Path};/opt/local/bin" />
 		</exec>
-		-->
 	</target>
 
 	<target name="Editordocs" depends="init" description="ACP Editor documentation">
@@ -96,7 +95,7 @@
 		           version="true"
 		           use="true"
 		           windowtitle="ACP Editor API"
-				   classpath = "MASCOT.jar:${prevayler.jar}"
+				   classpath = "MASCOT.jar:${prevayler.jar:${foundation.jar}"
 					useexternalfile = "yes">
 			<fileset dir="../com.objectforge.mascot.ACPFormEditor" defaultexcludes="yes">
 				<include name="ACPEditor/**"/>
@@ -139,9 +138,10 @@
 		<delete file="MOJOdemo.jar"/>
 	</target>
 
-	<target name="Delivery" depends="MOJOzip,MOJOdemo,Doxygen" description="Copy to the delivery directory">
+	<target name="Delivery" depends="MOJOzip,MOJOdemo" description="Copy to the delivery directory">
 		<delete dir="${demo.dir}"/>
 		<mkdir dir="${demo.dir}"/>
+		<mkdir dir="doc"/>
 		<copy overwrite="true" file="MASCOT.jar" todir="${demo.dir}" />
 		<copy overwrite="true" todir="${target.jar.dir}">
 			<fileset dir=".">
@@ -153,6 +153,7 @@
 		</copy>
 		<copy overwrite="true" file="MOJOdemo.jar" todir="${demo.dir}" />
 		<copy overwrite="true" file="${prevayler.jar}" todir="${target.jar.dir}" />
+		<copy overwrite="true" file="${foundation.jar}" todir="${target.jar.dir}" />
 		<copy overwrite="true" file="MOJOsrc.zip" todir="${demo.dir}" />
 		<delete dir="${demo.dir}/doc"/>
 		<mkdir dir="${demo.dir}/doc/Prevayler"/>
@@ -162,11 +163,11 @@
 			</fileset>
 		</copy>
 		<copy overwrite="true" todir="${demo.dir}/doc/Prevayler">
-			<fileset dir="${source.dir}/prevayler-2.3/docs">
+			<fileset dir="${source.dir}/prevayler-2.7/docs">
 				<include name="**"/>
 			</fileset>
 		</copy>
-		<copy overwrite="true" todir="${demo.dir}/2010 ACP Editor Update">
+		<copy overwrite="true" todir="${demo.dir}/2015 ACP Editor Update">
 			<fileset dir="../ACP Editor Update">
 				<include name="**"/>
 				<exclude name=".*"/>
@@ -175,8 +176,8 @@
 		</copy>
 	</target>
 
-	<target name="MOJO2010zip" depends="Delivery">
-		<zip destfile="MOJO_2010.zip">
+	<target name="MOJO2015zip" depends="Delivery">
+		<zip destfile="MOJO_2015.zip">
 			<zipfileset dir="${demo.dir}" defaultexcludes="yes">
 				<include name="**"/>
 			</zipfileset>

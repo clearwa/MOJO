@@ -233,14 +233,19 @@ public class PersistentChannel extends AbstractIDA {
             factory.configurePrevalentSystem(pList);
             factory.configurePrevalenceDirectory(directory);
             //I do not want to filter transactions
-            factory.configureTransactionFiltering(false);
+            //factory.configureTransactionFiltering(false);
             //Create the sucker
-            Prevayler mp = factory.create();
-            //Now that the system is initialized, elide the discards with the the contents
-            //so recovery is complete.
-            mp.execute( PersistentList.elide() );
-            //Since all of this happened behind the prevalent system's back crank out a snapshot
-            mp.takeSnapshot();
+            Prevayler mp = null;
+            try{
+	            mp = factory.create();
+	            //Now that the system is initialized, elide the discards with the the contents
+	            //so recovery is complete.
+	            mp.execute( PersistentList.elide() );
+	            //Since all of this happened behind the prevalent system's back crank out a snapshot
+	            mp.takeSnapshot();
+            } catch (Exception ex) {
+            	
+            };
             initialized = true;
             processQ.stim();
             readQ.cqStim();
@@ -283,6 +288,7 @@ public class PersistentChannel extends AbstractIDA {
                     try {
                         pSystem.takeSnapshot();
                         return true;
+                    } catch (Exception ex) {
                     } finally {
                         writeQ.leave();
                     }
