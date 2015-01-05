@@ -60,8 +60,8 @@ import com.objectforge.mascot.utility.MascotRuntimeException;
 public class EntityStore {
     private static final String Header[] =
         {
-            "MOJO: A Java implementation of the MASCOT 2002 Machine",
-            "Copyright - The Object Forge, 2002,2003 (www.object-forge.com)",
+            "MOJO: A Java implementation of the MASCOT 2015 Machine",
+            "Copyright - The Object Forge, 2002,2003,2010,2015 (www.object-forge.com)",
             "",
             "MOJO is licensed material and is the property of the Object Forge,",
             "Malvern, UK; it is not freeware or shareware and is not subject to any",

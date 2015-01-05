@@ -1,4 +1,4 @@
-<project name="MOJO Demonstration" basedir="." default="Delivery" xmlns:doxygen="antlib:org.doxygen.tools">
+<project name="MOJO Demonstration" basedir="." xmlns:doxygen="antlib:org.doxygen.tools">
 
 	<property name="demo.dir" value="MOJO 2015"/>
 	<property name="prevayler.jar" value="Jars/prevayler-2.7.jar"/>
@@ -48,7 +48,7 @@
 	</target>
 
 	<target name="MOJOdocs" depends="init" description="Build MOJO documentation">
-		<delete dir="doc"/>
+		<!--delete dir="doc"-->
 		<mkdir dir="doc"/>
 		<javadoc destdir="${basedir}/doc/MOJO"
 		           author="true"
