@@ -3,9 +3,9 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="ACPEditor"/>
-	<classpathentry kind="src" path="MASCOT XML"/>
 	<classpathentry kind="src" path="ACPTemplates"/>
 	<classpathentry kind="src" path="icons"/>
+	<classpathentry kind="src" path="MASCOT XML"/>
 	<classpathentry exported="true" kind="lib" path="bin" sourcepath="bin"/>
 	<classpathentry kind="lib" path="/MASCOT XML/bin"/>
 	<classpathentry kind="output" path="bin"/>

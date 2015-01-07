@@ -2,7 +2,7 @@
 <feature
       id="com.objectforge.mascot.ACPFormEditor"
       label="The Mascot 2015 ACP Editor"
-      version="2.1.4"
+      version="2.1.5"
       provider-name="Object Forge Ltd."
       plugin="com.objectforge.mascot.ACPFormEditor"
       os="linux,macosx,win32"
@@ -53,12 +53,15 @@ in Java) please refer to the URL below.
       <import plugin="org.eclipse.ui.ide"/>
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.eclipse.ui.forms"/>
+      <import feature="org.eclipse.wb.swt.feature" version="1.8.0.r44x201412090024" match="compatible"/>
    </requires>
 
    <plugin
          id="com.objectforge.mascot.ACPFormEditor"
+         os="linux,macosx,win32"
+         nl="en_GB,en_US"
          download-size="0"
          install-size="0"
-         version="2.1.4"/>
+         version="2.1.5"/>
 
 </feature>

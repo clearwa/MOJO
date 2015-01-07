@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.objectforge.mascot.ACPFormEditor_2.1.4.jar" id="com.objectforge.mascot.ACPFormEditor" version="2.1.4" os="linux,macosx,win32" nl="en_GB,en_US">
+   <feature url="features/com.objectforge.mascot.ACPFormEditor_2.1.5.jar" id="com.objectforge.mascot.ACPFormEditor" version="2.1.5" os="linux,macosx,win32" nl="en_GB,en_US">
       <category name="macp_editor"/>
    </feature>
    <category-def name="macp_editor" label="MOJO ACP Editor"/>

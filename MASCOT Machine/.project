@@ -19,12 +19,12 @@
 		<link>
 			<name>Resources/ACPTemplates</name>
 			<type>2</type>
-			<locationURI>MOJO_ROOT/MOJO-Demo/ACPTemplates</locationURI>
+			<locationURI>MOJO_ROOT/ACPTemplates</locationURI>
 		</link>
 		<link>
 			<name>Resources/Images</name>
 			<type>2</type>
-			<locationURI>MOJO_ROOT/MOJO-Demo/Images</locationURI>
+			<locationURI>MOJO_ROOT/Images</locationURI>
 		</link>
 		<link>
 			<name>Resources/boot-baseline.macp</name>
@@ -70,7 +70,7 @@
 	<variableList>
 		<variable>
 			<name>MOJO_ROOT</name>
-			<value>file:/C:/Users/allan/git/MOJO_Recovery/MOJO-Demo</value>
+			<value>file:/C:/Users/allan/Dropbox/Repository/MOJO_Recovery/MOJO-Demo</value>
 		</variable>
 	</variableList>
 </projectDescription>
