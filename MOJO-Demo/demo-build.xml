@@ -5,6 +5,7 @@
 	<property name="foundation.jar" value="Jars/prevayler-factory-2.7-SNAPSHOT.jar"/>
 	<property name="target.jar.dir" value="${demo.dir}/lib"/>
 	<property name="source.dir" value="Source"/>
+	<property name="dropbox.dir" value="C:\Users\allan\Dropbox\Repository"/>
 	<property environment="env"/>
 
 	<target name="init">
@@ -182,6 +183,7 @@
 				<include name="**"/>
 			</zipfileset>
 		</zip>
+		<copy overwrite="true" file="MOJO_2015.zip" todir="${dropbox.dir}" />
 	</target>
 
 </project>
