@@ -19,7 +19,7 @@
 		<link>
 			<name>Resources/ACPTemplates</name>
 			<type>2</type>
-			<locationURI>MOJO_ROOT/ACPTemplates</locationURI>
+			<locationURI>MOJO_ROOT/MOJO-Demo/ACPTemplates</locationURI>
 		</link>
 		<link>
 			<name>Resources/Images</name>
@@ -70,7 +70,7 @@
 	<variableList>
 		<variable>
 			<name>MOJO_ROOT</name>
-			<value>file:/C:/Users/allan/Dropbox/Repository/MOJO_Recovery/MOJO-Demo</value>
+			<value>$%7BPARENT-1-PROJECT_LOC%7D</value>
 		</variable>
 	</variableList>
 </projectDescription>
